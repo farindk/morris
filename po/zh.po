@@ -1,0 +1,616 @@
+# Chinese translations for morris package.
+# Copyright (C) 2009 Dirk Farin
+# This file is distributed under the same license as the morris package.
+# Dirk Farin <enzhao@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: morris 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-25 22:31+0100\n"
+"PO-Revision-Date: 2009-10-25 21:51+0100\n"
+"Last-Translator: Dirk Farin <dirk.farin@gmail.com>\n"
+"Language-Team: Chinese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/algo_alphabeta.cc:590
+msgid "white"
+msgstr "白方"
+
+#: ../src/algo_alphabeta.cc:591
+msgid "black"
+msgstr "黑方"
+
+#: ../src/algo_alphabeta.cc:600
+#, c-format
+msgid "%s wins in %d moves)"
+msgstr "%s将在%d回合内胜出"
+
+#: ../src/algo_alphabeta.cc:601
+#, c-format
+msgid "%s wins the next move)"
+msgstr "%s将在下一回合胜出"
+
+#: ../src/boardgui.cc:104
+#, c-format
+msgid "You make take %d opponent piece(s)."
+msgstr "你可以吃掉对方的%d颗棋子"
+
+#: ../src/gtk_appgui.cc:200
+msgid "White has won."
+msgstr "白方胜出"
+
+#: ../src/gtk_appgui.cc:201
+msgid "Black has won."
+msgstr "黑方胜出"
+
+#: ../src/gtk_appgui.cc:202
+msgid "Tie between both players."
+msgstr "和棋"
+
+#: ../src/gtk_appgui.cc:209
+msgid "Game over"
+msgstr "游戏结束"
+
+#: ../src/gtk_appgui.cc:231
+msgid ""
+"A computer adaptation of the Nine-Mens-Morris board game and its variants."
+msgstr "删棋及其变体的电子版"
+
+#: ../src/gtk_menutoolbar.cc:173
+msgid "Game"
+msgstr "游戏"
+
+#: ../src/gtk_menutoolbar.cc:173
+msgid "menu for game-related functions."
+msgstr "游戏功能相关的菜单"
+
+#: ../src/gtk_menutoolbar.cc:174
+msgid "New game"
+msgstr "新游戏"
+
+#: ../src/gtk_menutoolbar.cc:174
+msgid "Start a new game."
+msgstr "开始新游戏"
+
+#: ../src/gtk_menutoolbar.cc:175
+msgid "Continue game"
+msgstr "继续游戏"
+
+#: ../src/gtk_menutoolbar.cc:175
+msgid "Continue a paused game."
+msgstr "继续游戏"
+
+#: ../src/gtk_menutoolbar.cc:176
+msgid "Force move"
+msgstr "立即走子"
+
+#: ../src/gtk_menutoolbar.cc:176
+msgid "Force computer move (immediately stop calculation)."
+msgstr "强令电脑中断运算， 立即走子"
+
+#: ../src/gtk_menutoolbar.cc:177
+msgid "Undo move"
+msgstr "悔棋"
+
+#: ../src/gtk_menutoolbar.cc:177
+msgid "Undo last move."
+msgstr "反悔上一步棋"
+
+#: ../src/gtk_menutoolbar.cc:178
+msgid "Redo move"
+msgstr "重复反悔的步骤"
+
+#: ../src/gtk_menutoolbar.cc:178
+msgid "Redo last move."
+msgstr "重复反悔了的步骤"
+
+#: ../src/gtk_menutoolbar.cc:179
+msgid "Hint"
+msgstr "提示"
+
+#: ../src/gtk_menutoolbar.cc:179
+msgid "Give a hint for the next move."
+msgstr "提示下一步棋"
+
+#: ../src/gtk_menutoolbar.cc:182
+msgid "Options"
+msgstr "选项"
+
+#: ../src/gtk_menutoolbar.cc:183 ../src/mainapp.cc:348
+msgid "White player"
+msgstr "白方"
+
+#: ../src/gtk_menutoolbar.cc:184 ../src/mainapp.cc:350
+msgid "Black player"
+msgstr "黑方"
+
+#: ../src/gtk_menutoolbar.cc:185
+msgid "Swap players"
+msgstr "换棋"
+
+#: ../src/gtk_menutoolbar.cc:186
+msgid "Configure AI ..."
+msgstr "人工智能参数设定 ..."
+
+#: ../src/gtk_menutoolbar.cc:187
+msgid "Configure display ..."
+msgstr "棋盘外观设定 ..."
+
+#: ../src/gtk_menutoolbar.cc:188
+msgid "Configure custom rules ..."
+msgstr "规则设定 ..."
+
+#: ../src/gtk_menutoolbar.cc:189
+msgid "Help"
+msgstr "帮助"
+
+#: ../src/gtk_menutoolbar.cc:190
+msgid "About Morris..."
+msgstr "关于德克的删棋"
+
+#: ../src/gtk_menutoolbar.cc:191
+msgid "Preferences"
+msgstr "喜好设定"
+
+#: ../src/gtk_menutoolbar.cc:196 ../src/gtk_menutoolbar.cc:204
+msgid "Human"
+msgstr "真人"
+
+#: ../src/gtk_menutoolbar.cc:197 ../src/gtk_menutoolbar.cc:205
+#: ../src/gtk_prefAI.cc:88
+msgid "Computer A"
+msgstr "电脑甲"
+
+#: ../src/gtk_menutoolbar.cc:198 ../src/gtk_menutoolbar.cc:206
+#: ../src/gtk_prefAI.cc:88
+msgid "Computer B"
+msgstr "电脑乙"
+
+#: ../src/gtk_menutoolbar.cc:199 ../src/gtk_menutoolbar.cc:207
+msgid "Network"
+msgstr "联网对弈"
+
+#: ../src/gtk_menutoolbar.cc:212
+msgid "Standard rules"
+msgstr "标准规则"
+
+#: ../src/gtk_menutoolbar.cc:213 ../src/gtk_prefRules.cc:113
+msgid "Lasker variant"
+msgstr "拉斯科变体"
+
+#: ../src/gtk_menutoolbar.cc:214 ../src/gtk_prefRules.cc:60
+msgid "Moebius board"
+msgstr "莫比乌斯棋盘"
+
+#: ../src/gtk_menutoolbar.cc:215 ../src/gtk_prefRules.cc:61
+msgid "Morabaraba"
+msgstr "莫拉巴拉巴"
+
+#: ../src/gtk_menutoolbar.cc:216 ../src/gtk_prefRules.cc:62
+msgid "Windmill"
+msgstr "风车"
+
+#: ../src/gtk_menutoolbar.cc:217 ../src/gtk_prefRules.cc:63
+#, fuzzy
+msgid "Sunmill"
+msgstr "风车"
+
+#: ../src/gtk_menutoolbar.cc:218 ../src/gtk_prefRules.cc:68
+msgid "Six Men's Morris"
+msgstr "六子删棋"
+
+#: ../src/gtk_menutoolbar.cc:219 ../src/gtk_prefRules.cc:67
+msgid "Seven Men's Morris"
+msgstr "七子删棋"
+
+#: ../src/gtk_menutoolbar.cc:220
+msgid "Triangle board"
+msgstr "三角形棋盘"
+
+#: ../src/gtk_menutoolbar.cc:221
+msgid "Pentagon board"
+msgstr "五边形棋盘"
+
+#: ../src/gtk_menutoolbar.cc:222
+msgid "Hexagon board"
+msgstr "六边形棋盘"
+
+#: ../src/gtk_menutoolbar.cc:223
+msgid "Tapatan"
+msgstr "它帕滩"
+
+#: ../src/gtk_menutoolbar.cc:224
+msgid "Achi"
+msgstr "阿赤"
+
+#: ../src/gtk_menutoolbar.cc:225 ../src/gtk_prefRules.cc:71
+msgid "Small triangle"
+msgstr "小三角"
+
+#: ../src/gtk_menutoolbar.cc:226
+msgid "Nine Holes"
+msgstr "九洞"
+
+#: ../src/gtk_menutoolbar.cc:227
+msgid "Custom rules"
+msgstr "自定义规则"
+
+#: ../src/gtk_menutoolbar.cc:232
+msgid "Pause on AI-player"
+msgstr "电脑每步一停"
+
+#: ../src/gtk_menutoolbar.cc:232
+msgid "Pause before each AI move."
+msgstr "电脑每下一步后游戏暂停"
+
+#. default
+#: ../src/gtk_menutoolbar.cc:234
+msgid "Show log of moves"
+msgstr "显示本局棋谱"
+
+#: ../src/gtk_movelog.cc:47
+msgid "Move List"
+msgstr "显示本局棋谱"
+
+#: ../src/gtk_movelog.cc:63
+msgid "Move"
+msgstr "回合"
+
+#: ../src/gtk_movelog.cc:71
+msgid "White"
+msgstr "白方"
+
+#: ../src/gtk_movelog.cc:79
+msgid "Black"
+msgstr "黑方"
+
+#: ../src/gtk_movelog.cc:154
+msgid "tie"
+msgstr "和棋"
+
+#: ../src/gtk_prefAI.cc:76
+msgid "AI Preferences"
+msgstr "人工智能设定"
+
+#: ../src/gtk_prefAI.cc:119
+msgid "<b>thinking process</b>"
+msgstr "<b>思考限制</b>"
+
+#: ../src/gtk_prefAI.cc:122
+msgid "max. time"
+msgstr "思考时间上限"
+
+#: ../src/gtk_prefAI.cc:123
+msgid "max. depth"
+msgstr "思考深度上限"
+
+#: ../src/gtk_prefAI.cc:135
+msgid "<b>evaluation weights</b>"
+msgstr "<b>取舍条件权重</b>"
+
+#: ../src/gtk_prefAI.cc:141
+msgid "material"
+msgstr "棋子数量"
+
+#: ../src/gtk_prefAI.cc:142
+msgid "freedom"
+msgstr "棋子自由度"
+
+#: ../src/gtk_prefAI.cc:143
+msgid "mills"
+msgstr "成三度"
+
+#: ../src/gtk_prefAI.cc:144
+msgid "experience"
+msgstr "经验教训"
+
+#: ../src/gtk_prefAI.cc:184
+msgid "share transposition table"
+msgstr "共享置换表"
+
+#: ../src/gtk_prefDisplay.cc:36
+msgid "Display Preferences"
+msgstr "棋盘外观设定"
+
+#: ../src/gtk_prefDisplay.cc:48
+msgid "animate computer moves"
+msgstr "电脑下子动画效果"
+
+#: ../src/gtk_prefDisplay.cc:49
+msgid "animate setting of pieces"
+msgstr "下子动画效果"
+
+#: ../src/gtk_prefDisplay.cc:50
+msgid "animate takes"
+msgstr "吃子动画效果"
+
+#: ../src/gtk_prefDisplay.cc:51
+msgid "colored crossings while dragging"
+msgstr "走子时棋盘节点着色"
+
+#: ../src/gtk_prefDisplay.cc:52
+msgid "show game-over message box"
+msgstr "显示游戏结束告示牌"
+
+#: ../src/gtk_prefDisplay.cc:53
+msgid "show coordinates"
+msgstr "显示棋盘坐标"
+
+#: ../src/gtk_prefDisplay.cc:76
+msgid "animation speed"
+msgstr "动画速度"
+
+#: ../src/gtk_prefDisplay.cc:96
+msgid "take piece delay"
+msgstr "吃子行动延迟"
+
+#: ../src/gtk_prefRules.cc:59
+msgid "Nine Men's Morris"
+msgstr "九子棋盘"
+
+#: ../src/gtk_prefRules.cc:64
+msgid "Triangle"
+msgstr "三角棋盘"
+
+#: ../src/gtk_prefRules.cc:65
+msgid "Pentagon"
+msgstr "五边形棋盘"
+
+#: ../src/gtk_prefRules.cc:66
+msgid "Hexagon"
+msgstr "六角形棋盘"
+
+#: ../src/gtk_prefRules.cc:69
+msgid "Small square"
+msgstr "田字格棋盘"
+
+#: ../src/gtk_prefRules.cc:70
+msgid "Small square with diagonals"
+msgstr "米字格棋盘"
+
+#: ../src/gtk_prefRules.cc:80
+msgid "Rule Preferences"
+msgstr "规则设定"
+
+#. board selection
+#: ../src/gtk_prefRules.cc:90
+msgid "Board Type"
+msgstr "棋盘类型"
+
+#.
+#. setup the rule variations
+#.
+#: ../src/gtk_prefRules.cc:110
+msgid "Rule Variations"
+msgstr "规则变体"
+
+#: ../src/gtk_prefRules.cc:114
+msgid "May jump with three pieces"
+msgstr "棋盘上仅剩三子的一方可任意安置己方棋子"
+
+#: ../src/gtk_prefRules.cc:115
+msgid "May take from mills always"
+msgstr "允许吃掉对方己成三的棋子"
+
+#: ../src/gtk_prefRules.cc:116
+msgid "May take multiple pieces"
+msgstr "允许一次吃掉对方多个棋子"
+
+#: ../src/gtk_prefRules.cc:125
+msgid "Number of pieces"
+msgstr "每方棋子数"
+
+#: ../src/gtk_prefRules.cc:145
+msgid "Declare tie after how many repeats"
+msgstr "几次重复回合后和棋"
+
+#: ../src/gtk_prefRules.cc:221
+msgid "Your changes require to end the currently running game."
+msgstr "正在进行的游戏必须终止。"
+
+#: ../src/gtk_prefRules.cc:222
+msgid "Do you want to restart with the changed rules?"
+msgstr "在刚刚设定好的规则下开始新游戏吗？"
+
+#: ../src/mainapp.cc:324
+msgid "Game over: white has won!"
+msgstr "游戏结束： 白方胜出！"
+
+#: ../src/mainapp.cc:328
+msgid "Game over: black has won!"
+msgstr "游戏结束： 黑方胜出！"
+
+#: ../src/mainapp.cc:332
+msgid "Game ended in a tie between both players."
+msgstr "游戏结束：和棋。"
+
+#: ../src/mainapp.cc:338
+msgid "Game paused. Click continue to proceed."
+msgstr "游戏暂停中。 按工具条上的继续键或菜单里的继续选项继续游戏。"
+
+#: ../src/mainapp.cc:356
+msgid "set or move a piece."
+msgstr "下子或移动一子。"
+
+#: ../src/mainapp.cc:357
+msgid "set a piece."
+msgstr "下一子。"
+
+#: ../src/mainapp.cc:358
+msgid "move a piece."
+msgstr "移动一子。"
+
+#: ../src/mainapp.cc:362
+msgid "computer is taking his turn...   "
+msgstr "电脑思索中..."
+
+#: ../morris.desktop.in.h:1
+msgid "Morris"
+msgstr "删棋"
+
+#: ../morris.desktop.in.h:2
+msgid "Nine Mens Morris game"
+msgstr "删棋（成三棋）"
+
+#: ../morris.schemas.in.h:1
+msgid "Animate setting new pieces"
+msgstr "下子动画效果"
+
+#: ../morris.schemas.in.h:2
+msgid "Animate takes"
+msgstr "吃子动画效果"
+
+#: ../morris.schemas.in.h:3
+msgid "Animate the computer moves"
+msgstr "电脑下子动画效果"
+
+#: ../morris.schemas.in.h:4
+msgid "Animation speed"
+msgstr "动画速度"
+
+#: ../morris.schemas.in.h:5
+msgid "Color the board crossing while dragging"
+msgstr "走子时棋盘节点着色"
+
+#: ../morris.schemas.in.h:6
+msgid "Delay between animations of takes"
+msgstr ""
+
+#: ../morris.schemas.in.h:7
+msgid ""
+"Delay between the animation of takes and between the move-animation and the "
+"first take (in milliseconds)."
+msgstr ""
+
+#: ../morris.schemas.in.h:8
+msgid ""
+"Evaluation weight for complete mills (number of completed mills, relative to "
+"the number of the opponent's mills)."
+msgstr ""
+
+#: ../morris.schemas.in.h:9
+msgid "Evaluation weight for experience"
+msgstr ""
+
+#: ../morris.schemas.in.h:10
+msgid "Evaluation weight for freedom"
+msgstr ""
+
+#: ../morris.schemas.in.h:11
+msgid ""
+"Evaluation weight for freedom (number of possible moves, relative to the "
+"possible moves of the opponent)."
+msgstr ""
+
+#: ../morris.schemas.in.h:12
+msgid "Evaluation weight for material"
+msgstr ""
+
+#: ../morris.schemas.in.h:13
+msgid ""
+"Evaluation weight for material (number of pieces left, relative to the "
+"pieces left of the opponent)."
+msgstr ""
+
+#: ../morris.schemas.in.h:14
+#, fuzzy
+msgid "Evaluation weight for mills"
+msgstr "<b>取舍条件权重</b>"
+
+#: ../morris.schemas.in.h:15
+msgid ""
+"Evaluation weight for the experience gained during previous games. Positions "
+"that lead to winning a game get a bonus, while positions that lead to a lost "
+"game are down-rated."
+msgstr ""
+
+#: ../morris.schemas.in.h:16
+msgid "If enabled, setting new pieces by the computer will be animated."
+msgstr ""
+
+#: ../morris.schemas.in.h:17
+msgid "If enabled, taking of opponent stones by the computer will be animated."
+msgstr ""
+
+#: ../morris.schemas.in.h:18
+msgid "If enabled, the program will pause before an AI-player makes a move."
+msgstr ""
+
+#: ../morris.schemas.in.h:19
+msgid ""
+"If this is enabled, the crossings of the board are colored while the user "
+"drags a piece to show the valid moves."
+msgstr ""
+
+#: ../morris.schemas.in.h:20
+msgid "Maximum search-depth"
+msgstr ""
+
+#: ../morris.schemas.in.h:21
+msgid "Maximum search-depth in the game tree for Computer A."
+msgstr ""
+
+#: ../morris.schemas.in.h:22
+msgid "Maximum thinking time"
+msgstr ""
+
+#: ../morris.schemas.in.h:23
+msgid "Maximum time (in milliseconds) Computer A is allowed to think."
+msgstr ""
+
+#: ../morris.schemas.in.h:24
+#, fuzzy
+msgid "Pause on AI players"
+msgstr "电脑每步一停"
+
+#: ../morris.schemas.in.h:25
+#, fuzzy
+msgid "Share transposition tables between Computer A and B"
+msgstr "共享置换表"
+
+#: ../morris.schemas.in.h:26
+msgid "Show a game log"
+msgstr ""
+
+#: ../morris.schemas.in.h:27
+msgid "Show a message box with the winner at the end of the game."
+msgstr ""
+
+#: ../morris.schemas.in.h:28
+msgid "Show a separate window with the history of the moves played in a game."
+msgstr ""
+
+#: ../morris.schemas.in.h:29
+#, fuzzy
+msgid "Show board coordinates"
+msgstr "显示棋盘坐标"
+
+#: ../morris.schemas.in.h:30
+#, fuzzy
+msgid "Show game-over message-box"
+msgstr "显示游戏结束告示牌"
+
+#: ../morris.schemas.in.h:31
+msgid "Show the alpha-numeric board coordinates."
+msgstr ""
+
+#: ../morris.schemas.in.h:32
+msgid ""
+"Speed of pieces in the animation. Actually, the value is the number of "
+"milliseconds it takes to move a piece across the whole board."
+msgstr ""
+
+#: ../morris.schemas.in.h:33
+msgid ""
+"Whether both AI players (Computer A and B) should use the same transposition "
+"table. If enables, one AI player will benefit from the calculations of the "
+"other. Note that if this is enabled, the evaluation weights of both players "
+"have to be set to identical values."
+msgstr ""
+
+#: ../morris.schemas.in.h:34
+msgid "Whether the computer moves should be shown as small animations."
+msgstr ""

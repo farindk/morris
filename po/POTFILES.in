@@ -1,0 +1,13 @@
+# List of source files which contain translatable strings.
+src/algo_alphabeta.cc
+src/boardgui.cc
+src/gtk_appgui.cc
+src/gtk_menutoolbar.cc
+src/gtk_movelog.cc
+src/gtk_prefAI.cc
+src/gtk_prefDisplay.cc
+src/gtk_prefRules.cc
+src/mainapp.cc
+src/util.hh
+morris.desktop.in
+morris.schemas.in

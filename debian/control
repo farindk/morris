@@ -1,0 +1,20 @@
+Source: morris
+Section: games
+Priority: optional
+Maintainer: Dirk Farin <dirk.farin@gmail.com>
+Build-Depends: debhelper (>= 7), autotools-dev, libglib2.0-dev, libgtk2.0-dev, libcairo2-dev, libfreetype6-dev, libboost-signals-dev, libgconf2-dev, intltool
+Build-Conflicts: autoconf2.13, automake1.4
+Standards-Version: 3.8.3
+Homepage: http://www.morris.org/
+
+Package: morris
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Nine men's morris game for the gnome desktop.
+  Morris is an implementation of the board game "Nine Men's Morris".
+  Sometimes simply called Mills, Morris, Merrills, or Mühle in German.
+  .
+  The implementation supports not only the standard game, but also
+  several rule-variants and different boards.
+  The game supports a strong computer player which learns from
+  past games played.

@@ -1,0 +1,617 @@
+# German translations for Morris package.
+# Copyright (C) 2009 Dirk Farin
+# This file is distributed under the same license as the Morris package.
+# Dirk Farin <dirk.farin@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Morris 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-25 22:31+0100\n"
+"PO-Revision-Date: 2009-10-25 22:31+0100\n"
+"Last-Translator: Dirk Farin <dirk.farin@gmail.com>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/algo_alphabeta.cc:590
+msgid "white"
+msgstr "weiß"
+
+#: ../src/algo_alphabeta.cc:591
+msgid "black"
+msgstr "schwarz"
+
+#: ../src/algo_alphabeta.cc:600
+#, c-format
+msgid "%s wins in %d moves)"
+msgstr "%s gewinnt in %d Zügen)"
+
+#: ../src/algo_alphabeta.cc:601
+#, c-format
+msgid "%s wins the next move)"
+msgstr "%s gewinnt im nächsten Zug)"
+
+#: ../src/boardgui.cc:104
+#, c-format
+msgid "You make take %d opponent piece(s)."
+msgstr "Du darfst %d gegnerische Steine entfernen."
+
+#: ../src/gtk_appgui.cc:200
+msgid "White has won."
+msgstr "Weiß hat gewonnen."
+
+#: ../src/gtk_appgui.cc:201
+msgid "Black has won."
+msgstr "Schwarz hat gewonnen."
+
+#: ../src/gtk_appgui.cc:202
+msgid "Tie between both players."
+msgstr "Unentschieden."
+
+#: ../src/gtk_appgui.cc:209
+msgid "Game over"
+msgstr "Spiel ist zu Ende"
+
+#: ../src/gtk_appgui.cc:231
+msgid ""
+"A computer adaptation of the Nine-Mens-Morris board game and its variants."
+msgstr "Eine Computerimplementierung des Mühlespiels und seiner Varianten."
+
+#: ../src/gtk_menutoolbar.cc:173
+msgid "Game"
+msgstr "Spiel"
+
+#: ../src/gtk_menutoolbar.cc:173
+msgid "menu for game-related functions."
+msgstr "Menü für Funktionen zur Spielsteuerung"
+
+#: ../src/gtk_menutoolbar.cc:174
+msgid "New game"
+msgstr "Neues Spiel"
+
+#: ../src/gtk_menutoolbar.cc:174
+msgid "Start a new game."
+msgstr "Neues Spiel starten."
+
+#: ../src/gtk_menutoolbar.cc:175
+msgid "Continue game"
+msgstr "Spiel fortsetzen"
+
+#: ../src/gtk_menutoolbar.cc:175
+msgid "Continue a paused game."
+msgstr "Ein angehaltenes Spiel fortsetzen."
+
+#: ../src/gtk_menutoolbar.cc:176
+msgid "Force move"
+msgstr "Zug erzwingen"
+
+#: ../src/gtk_menutoolbar.cc:176
+msgid "Force computer move (immediately stop calculation)."
+msgstr "Zug erzwingen (Berechnung unterbrechen)."
+
+#: ../src/gtk_menutoolbar.cc:177
+msgid "Undo move"
+msgstr "Zug zurücknehmen"
+
+#: ../src/gtk_menutoolbar.cc:177
+msgid "Undo last move."
+msgstr "Letzten Zug zurücknehmen."
+
+#: ../src/gtk_menutoolbar.cc:178
+msgid "Redo move"
+msgstr "Zug vorwärts"
+
+#: ../src/gtk_menutoolbar.cc:178
+msgid "Redo last move."
+msgstr "Einen Zug vorwärts ziehen."
+
+#: ../src/gtk_menutoolbar.cc:179
+msgid "Hint"
+msgstr "Vorschlag"
+
+#: ../src/gtk_menutoolbar.cc:179
+msgid "Give a hint for the next move."
+msgstr "Vorschlag für den nächsten Zug geben."
+
+#: ../src/gtk_menutoolbar.cc:182
+msgid "Options"
+msgstr "Optionen"
+
+#: ../src/gtk_menutoolbar.cc:183 ../src/mainapp.cc:348
+msgid "White player"
+msgstr "Weißer Spieler"
+
+#: ../src/gtk_menutoolbar.cc:184 ../src/mainapp.cc:350
+msgid "Black player"
+msgstr "Schwarzer Spieler"
+
+#: ../src/gtk_menutoolbar.cc:185
+msgid "Swap players"
+msgstr "Spieler tauschen"
+
+#: ../src/gtk_menutoolbar.cc:186
+msgid "Configure AI ..."
+msgstr "KI konfigurieren ..."
+
+#: ../src/gtk_menutoolbar.cc:187
+msgid "Configure display ..."
+msgstr "Darstellung konfigurieren ..."
+
+#: ../src/gtk_menutoolbar.cc:188
+msgid "Configure custom rules ..."
+msgstr "Eigene Regeln definieren ..."
+
+#: ../src/gtk_menutoolbar.cc:189
+msgid "Help"
+msgstr "Hilfe"
+
+#: ../src/gtk_menutoolbar.cc:190
+msgid "About Morris..."
+msgstr "Über Morris..."
+
+#: ../src/gtk_menutoolbar.cc:191
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#: ../src/gtk_menutoolbar.cc:196 ../src/gtk_menutoolbar.cc:204
+msgid "Human"
+msgstr "Mensch"
+
+#: ../src/gtk_menutoolbar.cc:197 ../src/gtk_menutoolbar.cc:205
+#: ../src/gtk_prefAI.cc:88
+msgid "Computer A"
+msgstr "Computer A"
+
+#: ../src/gtk_menutoolbar.cc:198 ../src/gtk_menutoolbar.cc:206
+#: ../src/gtk_prefAI.cc:88
+msgid "Computer B"
+msgstr "Computer B"
+
+#: ../src/gtk_menutoolbar.cc:199 ../src/gtk_menutoolbar.cc:207
+msgid "Network"
+msgstr "Netzwerk"
+
+#: ../src/gtk_menutoolbar.cc:212
+msgid "Standard rules"
+msgstr "Standard Mühleregeln"
+
+#: ../src/gtk_menutoolbar.cc:213 ../src/gtk_prefRules.cc:113
+msgid "Lasker variant"
+msgstr "Laskervariante"
+
+#: ../src/gtk_menutoolbar.cc:214 ../src/gtk_prefRules.cc:60
+msgid "Moebius board"
+msgstr "Möbiusbrett"
+
+#: ../src/gtk_menutoolbar.cc:215 ../src/gtk_prefRules.cc:61
+msgid "Morabaraba"
+msgstr "Morabaraba"
+
+#: ../src/gtk_menutoolbar.cc:216 ../src/gtk_prefRules.cc:62
+msgid "Windmill"
+msgstr "Windmühle"
+
+#: ../src/gtk_menutoolbar.cc:217 ../src/gtk_prefRules.cc:63
+msgid "Sunmill"
+msgstr "Sonnenmühle"
+
+#: ../src/gtk_menutoolbar.cc:218 ../src/gtk_prefRules.cc:68
+msgid "Six Men's Morris"
+msgstr "6-Stein Mühle"
+
+#: ../src/gtk_menutoolbar.cc:219 ../src/gtk_prefRules.cc:67
+msgid "Seven Men's Morris"
+msgstr "7-Stein Mühle"
+
+#: ../src/gtk_menutoolbar.cc:220
+msgid "Triangle board"
+msgstr "Dreiecksmühle"
+
+#: ../src/gtk_menutoolbar.cc:221
+msgid "Pentagon board"
+msgstr "Fünfecksmühle"
+
+#: ../src/gtk_menutoolbar.cc:222
+msgid "Hexagon board"
+msgstr "Sechseckmühle"
+
+#: ../src/gtk_menutoolbar.cc:223
+msgid "Tapatan"
+msgstr "Tapatan"
+
+#: ../src/gtk_menutoolbar.cc:224
+msgid "Achi"
+msgstr "Achi"
+
+#: ../src/gtk_menutoolbar.cc:225 ../src/gtk_prefRules.cc:71
+msgid "Small triangle"
+msgstr "Kleines Dreieck"
+
+#: ../src/gtk_menutoolbar.cc:226
+msgid "Nine Holes"
+msgstr "Neun Löcher"
+
+#: ../src/gtk_menutoolbar.cc:227
+msgid "Custom rules"
+msgstr "Eigene Regeln"
+
+#: ../src/gtk_menutoolbar.cc:232
+msgid "Pause on AI-player"
+msgstr "Vor KI-Spieler pausieren"
+
+#: ../src/gtk_menutoolbar.cc:232
+msgid "Pause before each AI move."
+msgstr "Vor jedem Computerzug anhalten."
+
+#. default
+#: ../src/gtk_menutoolbar.cc:234
+msgid "Show log of moves"
+msgstr "Zugliste zeigen"
+
+#: ../src/gtk_movelog.cc:47
+msgid "Move List"
+msgstr "Zugliste"
+
+#: ../src/gtk_movelog.cc:63
+msgid "Move"
+msgstr "Zug"
+
+#: ../src/gtk_movelog.cc:71
+msgid "White"
+msgstr "weiß"
+
+#: ../src/gtk_movelog.cc:79
+msgid "Black"
+msgstr "schwarz"
+
+#: ../src/gtk_movelog.cc:154
+msgid "tie"
+msgstr "unentschieden"
+
+#: ../src/gtk_prefAI.cc:76
+msgid "AI Preferences"
+msgstr "KI Einstellungen"
+
+#: ../src/gtk_prefAI.cc:119
+msgid "<b>thinking process</b>"
+msgstr "<b>Zugberechnung</b>"
+
+#: ../src/gtk_prefAI.cc:122
+msgid "max. time"
+msgstr "max. Zeit"
+
+#: ../src/gtk_prefAI.cc:123
+msgid "max. depth"
+msgstr "max. Suchtiefe"
+
+#: ../src/gtk_prefAI.cc:135
+msgid "<b>evaluation weights</b>"
+msgstr "<b>Bewertungsgewichte</b>"
+
+#: ../src/gtk_prefAI.cc:141
+msgid "material"
+msgstr "Material"
+
+#: ../src/gtk_prefAI.cc:142
+msgid "freedom"
+msgstr "Bewegungsfreiheit"
+
+#: ../src/gtk_prefAI.cc:143
+msgid "mills"
+msgstr "Mühlen"
+
+#: ../src/gtk_prefAI.cc:144
+msgid "experience"
+msgstr "Erfahrung"
+
+#: ../src/gtk_prefAI.cc:184
+msgid "share transposition table"
+msgstr "Brettcache gemeinsam benutzen"
+
+#: ../src/gtk_prefDisplay.cc:36
+msgid "Display Preferences"
+msgstr "Darstellungseinstellungen"
+
+#: ../src/gtk_prefDisplay.cc:48
+msgid "animate computer moves"
+msgstr "Züge des Computers animieren"
+
+#: ../src/gtk_prefDisplay.cc:49
+msgid "animate setting of pieces"
+msgstr "Setzen der Steine animieren"
+
+#: ../src/gtk_prefDisplay.cc:50
+msgid "animate takes"
+msgstr "Schlagen der Steine animieren"
+
+#: ../src/gtk_prefDisplay.cc:51
+msgid "colored crossings while dragging"
+msgstr "Farbige Kreuzungspunkte während dem Ziehen"
+
+#: ../src/gtk_prefDisplay.cc:52
+msgid "show game-over message box"
+msgstr "Mitteilungsbox am Ende des Spiels anzeigen"
+
+#: ../src/gtk_prefDisplay.cc:53
+msgid "show coordinates"
+msgstr "Brettkoordinaten anzeigen"
+
+#: ../src/gtk_prefDisplay.cc:76
+msgid "animation speed"
+msgstr "Animationsgeschwindigkeit"
+
+#: ../src/gtk_prefDisplay.cc:96
+msgid "take piece delay"
+msgstr "Verzögerung beim Schlagen"
+
+#: ../src/gtk_prefRules.cc:59
+msgid "Nine Men's Morris"
+msgstr "Standardbrett"
+
+#: ../src/gtk_prefRules.cc:64
+msgid "Triangle"
+msgstr "Dreieck"
+
+#: ../src/gtk_prefRules.cc:65
+msgid "Pentagon"
+msgstr "Fünfeck"
+
+#: ../src/gtk_prefRules.cc:66
+msgid "Hexagon"
+msgstr "Sechseck"
+
+#: ../src/gtk_prefRules.cc:69
+msgid "Small square"
+msgstr "Kleines Quadrat"
+
+#: ../src/gtk_prefRules.cc:70
+msgid "Small square with diagonals"
+msgstr "Kleines Quadrat mit Diagonale"
+
+#: ../src/gtk_prefRules.cc:80
+msgid "Rule Preferences"
+msgstr "Regeleinstellungen"
+
+#. board selection
+#: ../src/gtk_prefRules.cc:90
+msgid "Board Type"
+msgstr "Bretttyp"
+
+#.
+#. setup the rule variations
+#.
+#: ../src/gtk_prefRules.cc:110
+msgid "Rule Variations"
+msgstr "Regelvariationen"
+
+#: ../src/gtk_prefRules.cc:114
+msgid "May jump with three pieces"
+msgstr "Springen mit 3 Steinen"
+
+#: ../src/gtk_prefRules.cc:115
+msgid "May take from mills always"
+msgstr "Schlagen von Steinen in einer Mühle"
+
+#: ../src/gtk_prefRules.cc:116
+msgid "May take multiple pieces"
+msgstr "Schlagen von mehreren Steinen"
+
+#: ../src/gtk_prefRules.cc:125
+msgid "Number of pieces"
+msgstr "Anzahl der Steine"
+
+#: ../src/gtk_prefRules.cc:145
+msgid "Declare tie after how many repeats"
+msgstr "Unentschieden nach wievielen Wiederholungen"
+
+#: ../src/gtk_prefRules.cc:221
+msgid "Your changes require to end the currently running game."
+msgstr ""
+"Deine Änderungen machen es notwendig, dass das Spiel neu gestartet wird."
+
+#: ../src/gtk_prefRules.cc:222
+msgid "Do you want to restart with the changed rules?"
+msgstr "Willst Du ein neues Spiel mit den geänderten Regeln starten?"
+
+#: ../src/mainapp.cc:324
+msgid "Game over: white has won!"
+msgstr "Spielende: weiß hat gewonnen!"
+
+#: ../src/mainapp.cc:328
+msgid "Game over: black has won!"
+msgstr "Spielende: Schwarz hat gewonnen!"
+
+#: ../src/mainapp.cc:332
+msgid "Game ended in a tie between both players."
+msgstr "Das Spiel ist unentschieden."
+
+#: ../src/mainapp.cc:338
+msgid "Game paused. Click continue to proceed."
+msgstr "Spiel angehalten, drücke \"Spiel fortsetzen\" um weiterzuspielen."
+
+#: ../src/mainapp.cc:356
+msgid "set or move a piece."
+msgstr "setze oder ziehe einen Stein."
+
+#: ../src/mainapp.cc:357
+msgid "set a piece."
+msgstr "setze einen Stein."
+
+#: ../src/mainapp.cc:358
+msgid "move a piece."
+msgstr "ziehe einen Stein."
+
+#: ../src/mainapp.cc:362
+msgid "computer is taking his turn...   "
+msgstr "Computer berechnet seinen Zug...   "
+
+#: ../morris.desktop.in.h:1
+msgid "Morris"
+msgstr "Mühle"
+
+#: ../morris.desktop.in.h:2
+msgid "Nine Mens Morris game"
+msgstr "Mühlespiel"
+
+#: ../morris.schemas.in.h:1
+msgid "Animate setting new pieces"
+msgstr "Setzen der Steine animieren"
+
+#: ../morris.schemas.in.h:2
+msgid "Animate takes"
+msgstr "Schlagen der Steine animieren"
+
+#: ../morris.schemas.in.h:3
+msgid "Animate the computer moves"
+msgstr "Züge des Computers animieren"
+
+#: ../morris.schemas.in.h:4
+msgid "Animation speed"
+msgstr "Animationsgeschwindigkeit"
+
+#: ../morris.schemas.in.h:5
+msgid "Color the board crossing while dragging"
+msgstr "Farbige Kreuzungspunkte während dem Ziehen"
+
+#: ../morris.schemas.in.h:6
+msgid "Delay between animations of takes"
+msgstr ""
+
+#: ../morris.schemas.in.h:7
+msgid ""
+"Delay between the animation of takes and between the move-animation and the "
+"first take (in milliseconds)."
+msgstr ""
+
+#: ../morris.schemas.in.h:8
+msgid ""
+"Evaluation weight for complete mills (number of completed mills, relative to "
+"the number of the opponent's mills)."
+msgstr ""
+
+#: ../morris.schemas.in.h:9
+msgid "Evaluation weight for experience"
+msgstr ""
+
+#: ../morris.schemas.in.h:10
+msgid "Evaluation weight for freedom"
+msgstr ""
+
+#: ../morris.schemas.in.h:11
+msgid ""
+"Evaluation weight for freedom (number of possible moves, relative to the "
+"possible moves of the opponent)."
+msgstr ""
+
+#: ../morris.schemas.in.h:12
+msgid "Evaluation weight for material"
+msgstr ""
+
+#: ../morris.schemas.in.h:13
+msgid ""
+"Evaluation weight for material (number of pieces left, relative to the "
+"pieces left of the opponent)."
+msgstr ""
+
+#: ../morris.schemas.in.h:14
+#, fuzzy
+msgid "Evaluation weight for mills"
+msgstr "<b>Bewertungsgewichte</b>"
+
+#: ../morris.schemas.in.h:15
+msgid ""
+"Evaluation weight for the experience gained during previous games. Positions "
+"that lead to winning a game get a bonus, while positions that lead to a lost "
+"game are down-rated."
+msgstr ""
+
+#: ../morris.schemas.in.h:16
+msgid "If enabled, setting new pieces by the computer will be animated."
+msgstr ""
+
+#: ../morris.schemas.in.h:17
+msgid "If enabled, taking of opponent stones by the computer will be animated."
+msgstr ""
+
+#: ../morris.schemas.in.h:18
+msgid "If enabled, the program will pause before an AI-player makes a move."
+msgstr ""
+
+#: ../morris.schemas.in.h:19
+msgid ""
+"If this is enabled, the crossings of the board are colored while the user "
+"drags a piece to show the valid moves."
+msgstr ""
+
+#: ../morris.schemas.in.h:20
+msgid "Maximum search-depth"
+msgstr ""
+
+#: ../morris.schemas.in.h:21
+msgid "Maximum search-depth in the game tree for Computer A."
+msgstr ""
+
+#: ../morris.schemas.in.h:22
+msgid "Maximum thinking time"
+msgstr ""
+
+#: ../morris.schemas.in.h:23
+msgid "Maximum time (in milliseconds) Computer A is allowed to think."
+msgstr ""
+
+#: ../morris.schemas.in.h:24
+#, fuzzy
+msgid "Pause on AI players"
+msgstr "Vor KI-Spieler pausieren"
+
+#: ../morris.schemas.in.h:25
+#, fuzzy
+msgid "Share transposition tables between Computer A and B"
+msgstr "Brettcache gemeinsam benutzen"
+
+#: ../morris.schemas.in.h:26
+msgid "Show a game log"
+msgstr ""
+
+#: ../morris.schemas.in.h:27
+msgid "Show a message box with the winner at the end of the game."
+msgstr ""
+
+#: ../morris.schemas.in.h:28
+msgid "Show a separate window with the history of the moves played in a game."
+msgstr ""
+
+#: ../morris.schemas.in.h:29
+#, fuzzy
+msgid "Show board coordinates"
+msgstr "Brettkoordinaten anzeigen"
+
+#: ../morris.schemas.in.h:30
+#, fuzzy
+msgid "Show game-over message-box"
+msgstr "Mitteilungsbox am Ende des Spiels anzeigen"
+
+#: ../morris.schemas.in.h:31
+msgid "Show the alpha-numeric board coordinates."
+msgstr ""
+
+#: ../morris.schemas.in.h:32
+msgid ""
+"Speed of pieces in the animation. Actually, the value is the number of "
+"milliseconds it takes to move a piece across the whole board."
+msgstr ""
+
+#: ../morris.schemas.in.h:33
+msgid ""
+"Whether both AI players (Computer A and B) should use the same transposition "
+"table. If enables, one AI player will benefit from the calculations of the "
+"other. Note that if this is enabled, the evaluation weights of both players "
+"have to be set to identical values."
+msgstr ""
+
+#: ../morris.schemas.in.h:34
+msgid "Whether the computer moves should be shown as small animations."
+msgstr ""

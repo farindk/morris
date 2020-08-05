@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+_Name=Morris
+_Comment=Nine Mens Morris game
+Icon=morris
+Exec=morris
+Terminal=false
+Categories=GNOME;GTK;Game;BoardGame;

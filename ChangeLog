@@ -1,0 +1,74 @@
+2009-10-25  Dirk Farin  <dirk.farin@gmail.com>
+
+	* gtk_prefRules.cc: added 6MM and 7MM to board selection dialog
+	* configure.ac: increased version number to 0.2
+	* gtkcairo_boardgui.cc: bugfix to correctly draw the board at program start
+	* boardspec.cc: added sun-mill variant
+
+2009-08-02  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (EXTRA_DIST): Add build-aux/config.rpath, m4/ChangeLog.
+	* configure.in (AC_CONFIG_FILES): Add po/Makefile.in.
+
+2009-08-02  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* m4/gettext.m4: New file, from gettext-0.17.
+	* m4/iconv.m4: New file, from gettext-0.17.
+	* m4/lib-ld.m4: New file, from gettext-0.17.
+	* m4/lib-link.m4: New file, from gettext-0.17.
+	* m4/lib-prefix.m4: New file, from gettext-0.17.
+	* m4/nls.m4: New file, from gettext-0.17.
+	* m4/po.m4: New file, from gettext-0.17.
+	* m4/progtest.m4: New file, from gettext-0.17.
+	* Makefile.am (SUBDIRS): Add po.
+	(EXTRA_DIST): Add build-aux/config.rpath.
+	* configure.in (AC_CONFIG_FILES): Add po/Makefile.in.
+
+2009-08-02  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (ACLOCAL_AMFLAGS): New variable.
+	(EXTRA_DIST): Add build-aux/config.rpath.
+
+2009-07-20  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* m4/codeset.m4: New file, from gettext-0.17.
+	* m4/glibc2.m4: New file, from gettext-0.17.
+	* m4/glibc21.m4: New file, from gettext-0.17.
+	* m4/intdiv0.m4: New file, from gettext-0.17.
+	* m4/intl.m4: New file, from gettext-0.17.
+	* m4/intldir.m4: New file, from gettext-0.17.
+	* m4/intlmacosx.m4: New file, from gettext-0.17.
+	* m4/intmax.m4: New file, from gettext-0.17.
+	* m4/inttypes_h.m4: New file, from gettext-0.17.
+	* m4/inttypes-pri.m4: New file, from gettext-0.17.
+	* m4/lcmessage.m4: New file, from gettext-0.17.
+	* m4/lock.m4: New file, from gettext-0.17.
+	* m4/longlong.m4: New file, from gettext-0.17.
+	* m4/printf-posix.m4: New file, from gettext-0.17.
+	* m4/size_max.m4: New file, from gettext-0.17.
+	* m4/stdint_h.m4: New file, from gettext-0.17.
+	* m4/uintmax_t.m4: New file, from gettext-0.17.
+	* m4/visibility.m4: New file, from gettext-0.17.
+	* m4/wchar_t.m4: New file, from gettext-0.17.
+	* m4/wint_t.m4: New file, from gettext-0.17.
+	* m4/xsize.m4: New file, from gettext-0.17.
+	* Makefile.am (SUBDIRS): Add intl.
+	* configure.in (AC_OUTPUT): Add intl/Makefile.
+
+2009-07-20  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* m4/gettext.m4: New file, from gettext-0.17.
+	* m4/iconv.m4: New file, from gettext-0.17.
+	* m4/lib-ld.m4: New file, from gettext-0.17.
+	* m4/lib-link.m4: New file, from gettext-0.17.
+	* m4/lib-prefix.m4: New file, from gettext-0.17.
+	* m4/nls.m4: New file, from gettext-0.17.
+	* m4/po.m4: New file, from gettext-0.17.
+	* m4/progtest.m4: New file, from gettext-0.17.
+	* Makefile.am (ACLOCAL_AMFLAGS): New variable.
+	(EXTRA_DIST): Add config.rpath.
+
+version 0.1.3
+	- bugfix: human players are not allowed to take stones from mills anymore
+	- jumping with three pieces can be disabled
+	- new translations: it, nl, mk

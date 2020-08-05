@@ -1,0 +1,79 @@
+
+  Morris
+ --------
+  A computer implementation of Nine Men's Morris and its variants.
+
+======================================================================
+
+OVERVIEW
+
+  Morris is an implementation of the board game "Nine Men's Morris".
+  Sometimes simply called Mills, Morris, Merrills, or Mühle in German.
+  The implementation supports not only the standard game, but also
+  several rule-variants and different boards.
+
+  Furthermore, the game supports:
+  -- a strong computer AI player
+  -- advanced AI controls to tweak AI playing style
+  -- giving hints for good moves
+  -- showing the principal variation
+  -- move takeback (undo and redo)
+  -- internationalization
+  -- many board and rule variations 
+  -- configurable display
+
+
+AI ALGORITHM
+
+  The AI algorithm is a standard alpha-beta search in a NegaMax
+  implementation using iterative deepening. It employs a
+  transposition table to quickly find previously computed positions.
+
+  A special feature is the automatic learning capability: whenever
+  the computer wins or loses a game, it will prefer to obtain or
+  avoid similar situations in the future. This results in a better
+  long-term motivation, since the computer will not make the same
+  mistake twice and the gameplay will be more randomized.
+
+  The evaluation function consists of four parts:
+  - material: the number of pieces each player has left
+  - freedom: the number of possible moves a player can conduct
+  - mills: the number of closed mills
+  - experience: the learning-bias from previous games
+
+======================================================================
+
+AUTHOR & CREDITS
+
+  Dirk Farin   - main author
+  Ryan Dibble  - provided many features to GNMM, which was the
+                 predecessor program of Morris
+
+======================================================================
+
+COPYRIGHT
+
+  Morris
+  Copyright (C) 2009 Dirk Farin <dirk.farin@gmail.com>
+
+  Morris is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+  Send inquiries, comments, bug reports, suggestions, patches, etc. to:
+
+      Dirk Farin <dirk.farin@gmail.com>
+
+  See also the Morris home page on the web:
+
+      http://nine-mens-morris.org/
