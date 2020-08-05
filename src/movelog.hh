@@ -19,7 +19,9 @@
 #ifndef MOVELOG_HH
 #define MOVELOG_HH
 
-#include <boost/signals.hpp>
+#include <boost/signals2.hpp>
+
+namespace bs2 = boost::signals2;
 
 
 /* A window showing a log of all moves in the current game.
@@ -31,10 +33,10 @@ public:
 
   virtual void refresh() = 0;
 
-  boost::signal<void ()>& getSignal_windowClosed() { return m_signal_windowClosed; }
+  bs2::signal<void ()>& getSignal_windowClosed() { return m_signal_windowClosed; }
 
 protected:
-  boost::signal<void ()> m_signal_windowClosed;
+  bs2::signal<void ()> m_signal_windowClosed;
 };
 
 #endif

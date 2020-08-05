@@ -39,7 +39,7 @@ AM_CONDITIONAL(HAVE_GCONF, test "x$with_gconf" != "xno")
 #ACLOCAL_AMFLAGS = -I build-aux
 
 BOOST_REQUIRE
-BOOST_SIGNALS()
+BOOST_SIGNALS2()
 
 
 # Checks for header files.

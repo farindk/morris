@@ -130,7 +130,7 @@ public:
 
   // --- signals ---
 
-  boost::signal<void (bool)>& getSignal_pauseChanged() { return m_signal_pauseChanged; }
+  bs2::signal<void (bool)>& getSignal_pauseChanged() { return m_signal_pauseChanged; }
 
 private:
   MainApp();
@@ -170,7 +170,7 @@ private:
   void startMove(player_ptr);
   void endMove(player_ptr);
 
-  boost::signal<void (bool)> m_signal_pauseChanged;
+  bs2::signal<void (bool)> m_signal_pauseChanged;
 };
 
 #endif

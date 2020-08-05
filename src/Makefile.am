@@ -24,8 +24,8 @@ if OS_WIN32
 win32_ldflags = -mwindows # $(WIN32_LARGE_ADDRESS_AWARE)
 endif
 
-morris_LDFLAGS = $(BOOST_SIGNALS_LDFLAGS) $(win32_ldflags)
-morris_LDADD = $(GTK_LIBS)  $(GCONF_LIBS) $(BOOST_SIGNALS_LIBS) $(LIBINTL)
+morris_LDFLAGS = $(BOOST_SIGNALS2_LDFLAGS) $(win32_ldflags)
+morris_LDADD = $(GTK_LIBS)  $(GCONF_LIBS) $(BOOST_SIGNALS2_LIBS) $(LIBINTL)
 
 
 AM_CPPFLAGS = -DLOCALEDIR=\"$(localedir)\" \
