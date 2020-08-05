@@ -206,7 +206,7 @@ void ApplicationGUI_Gtk::showGameOverDialog(Player winner)
 					     GTK_MESSAGE_INFO,
 					     GTK_BUTTONS_OK,
 					     _("Game over"));
-  gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog), text);
+  gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog), "%s", text);
 
   gtk_dialog_run(GTK_DIALOG (dialog));
   gtk_widget_destroy (dialog);
