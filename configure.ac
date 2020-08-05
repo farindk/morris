@@ -13,6 +13,7 @@ AM_INIT_AUTOMAKE([-Wall -Werror foreign dist-bzip2])
 # Checks for programs.
 AC_PROG_CXX
 AC_PROG_INTLTOOL
+AC_PROG_LIBTOOL
 
 # Checks for libraries.
 PKG_CHECK_MODULES(GTK, [
@@ -35,8 +36,11 @@ AM_CONDITIONAL(HAVE_GCONF, test "x$with_gconf" != "xno")
 # gdk-pixbuf-2.0
 # libgnome-2.0 libgnomeui-2.0 
 
-AX_BOOST_BASE
-AX_BOOST_SIGNALS
+#ACLOCAL_AMFLAGS = -I build-aux
+
+BOOST_REQUIRE
+BOOST_SIGNALS()
+
 
 # Checks for header files.
 AC_CHECK_HEADERS([libintl.h locale.h stdlib.h string.h sys/time.h])
