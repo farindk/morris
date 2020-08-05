@@ -112,7 +112,7 @@ void PlayerIF_AlgoAB::startMove(const Board& curr, int moveID)
   m_startBoard = curr;
   m_moveID = moveID;
 
-  thread = g_thread_create((GThreadFunc)startSearchThread,  this,  true,  NULL);
+  thread = g_thread_new(NULL, (GThreadFunc)startSearchThread,  this);
 }
 
 
