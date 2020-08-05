@@ -30,8 +30,8 @@ bool confirmationRequester(GtkWindow* parent, const char* primaryText, const cha
 					     GTK_DIALOG_DESTROY_WITH_PARENT,
 					     GTK_MESSAGE_QUESTION,
 					     GTK_BUTTONS_YES_NO,
-					     primaryText);
-  gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog), secondaryText);
+					     "%s", primaryText);
+  gtk_message_dialog_format_secondary_text(GTK_MESSAGE_DIALOG(dialog), "%s", secondaryText);
   gint button = gtk_dialog_run(GTK_DIALOG(dialog));
   gtk_widget_destroy (dialog);
 

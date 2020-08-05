@@ -598,7 +598,7 @@ void PlayerIF_AlgoAB::logBestMove(const Variation& v, eval_t e, int depth, const
 
       char buf[100];
       if (winInMoves>1) sprintf(buf, _("%s wins in %d moves)"), player, winInMoves);
-      else              sprintf(buf, _("%s wins the next move)"), player, winInMoves);
+      else              sprintf(buf, _("%s wins the next move)"), player);
 
       strstr << buf;
     }
