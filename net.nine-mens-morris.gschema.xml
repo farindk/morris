@@ -1,0 +1,137 @@
+<schemalist gettext-domain="morris">
+  <schema id="net.nine-mens-morris" path="/net/nine-mens-morris/">
+    <key name="show-log-of-moves" type="b">
+      <default>false</default>
+      <summary>Show a game log</summary>
+      <description>Show a separate window with the history of the moves played in a game.</description>
+    </key>
+    <key name="pause-on-ai-player" type="b">
+      <default>false</default>
+      <summary>Pause on AI players</summary>
+      <description>If enabled, the program will pause before an AI-player makes a move.</description>
+    </key>
+    <child name="display" schema="net.nine-mens-morris.display"/>
+    <child name="ai" schema="net.nine-mens-morris.ai"/>
+  </schema>
+  <schema id="net.nine-mens-morris.display" path="/net/nine-mens-morris/display/">
+    <key name="show-game-over-message-box" type="b">
+      <default>true</default>
+      <summary>Show game-over message-box</summary>
+      <description>Show a message box with the winner at the end of the game.</description>
+    </key>
+    <key name="show-board-coordinates" type="b">
+      <default>true</default>
+      <summary>Show board coordinates</summary>
+      <description>Show the alpha-numeric board coordinates.</description>
+    </key>
+    <key name="colored-crossings-while-dragging" type="b">
+      <default>true</default>
+      <summary>Color the board crossing while dragging</summary>
+      <description>If this is enabled, the crossings of the board are colored while the user drags a piece to show the valid moves.</description>
+    </key>
+    <key name="animate-computer-moves" type="b">
+      <default>true</default>
+      <summary>Animate the computer moves</summary>
+      <description>Whether the computer moves should be shown as small animations.</description>
+    </key>
+    <key name="animate-setting-of-pieces" type="b">
+      <default>true</default>
+      <summary>Animate setting new pieces</summary>
+      <description>If enabled, setting new pieces by the computer will be animated.</description>
+    </key>
+    <key name="animate-takes" type="b">
+      <default>true</default>
+      <summary>Animate takes</summary>
+      <description>If enabled, taking of opponent stones by the computer will be animated.</description>
+    </key>
+    <key name="animation-speed" type="d">
+      <default>1000</default>
+      <summary>Animation speed</summary>
+      <description>Speed of pieces in the animation. Actually, the value is the number of milliseconds it takes to move a piece across the whole board.</description>
+    </key>
+    <key name="take-piece-delay" type="d">
+      <default>2500</default>
+      <summary>Delay between animations of takes</summary>
+      <description>Delay between the animation of takes and between the move-animation and the first take (in milliseconds).</description>
+    </key>
+  </schema>
+  <schema id="net.nine-mens-morris.ai" path="/net/nine-mens-morris/ai/">
+    <key name="share-transposition-tables" type="b">
+      <default>true</default>
+      <summary>Share transposition tables between Computer A and B</summary>
+      <description>Whether both AI players (Computer A and B) should use the same transposition table. If enables, one AI player will benefit from the calculations of the other. Note that if this is enabled, the evaluation weights of both players have to be set to identical values.</description>
+    </key>
+    <child name="computer-a" schema="net.nine-mens-morris.ai.computer-a"/>
+    <child name="computer-b" schema="net.nine-mens-morris.ai.computer-b"/>
+  </schema>
+  <schema id="net.nine-mens-morris.ai.computer-a" path="/net/nine-mens-morris/ai/computer-a/">
+    <key name="max-time" type="i">
+      <default>1000</default>
+      <summary>Maximum thinking time</summary>
+      <description>Maximum time (in milliseconds) Computer A is allowed to think.</description>
+    </key>
+    <key name="max-depth" type="i">
+      <default>25</default>
+      <summary>Maximum search-depth</summary>
+      <description>Maximum search-depth in the game tree for Computer A.</description>
+    </key>
+    <child name="weights" schema="net.nine-mens-morris.ai.computer-a.weights"/>
+  </schema>
+  <schema id="net.nine-mens-morris.ai.computer-a.weights" path="/net/nine-mens-morris/ai/computer-a/weights/">
+    <key name="material" type="d">
+      <default>1.0</default>
+      <summary>Evaluation weight for material</summary>
+      <description>Evaluation weight for material (number of pieces left, relative to the pieces left of the opponent).</description>
+    </key>
+    <key name="freedom" type="d">
+      <default>0.2</default>
+      <summary>Evaluation weight for freedom</summary>
+      <description>Evaluation weight for freedom (number of possible moves, relative to the possible moves of the opponent).</description>
+    </key>
+    <key name="mills" type="d">
+      <default>0.8</default>
+      <summary>Evaluation weight for mills</summary>
+      <description>Evaluation weight for complete mills (number of completed mills, relative to the number of the opponent's mills).</description>
+    </key>
+    <key name="experience" type="d">
+      <default>1.0</default>
+      <summary>Evaluation weight for experience</summary>
+      <description>Evaluation weight for the experience gained during previous games. Positions that lead to winning a game get a bonus, while positions that lead to a lost game are down-rated.</description>
+    </key>
+  </schema>
+  <schema id="net.nine-mens-morris.ai.computer-b" path="/net/nine-mens-morris/ai/computer-b/">
+    <key name="max-time" type="i">
+      <default>1000</default>
+      <summary>Maximum thinking time</summary>
+      <description>Maximum time (in milliseconds) Computer A is allowed to think.</description>
+    </key>
+    <key name="max-depth" type="i">
+      <default>25</default>
+      <summary>Maximum search-depth</summary>
+      <description>Maximum search-depth in the game tree for Computer A.</description>
+    </key>
+    <child name="weights" schema="net.nine-mens-morris.ai.computer-b.weights"/>
+  </schema>
+  <schema id="net.nine-mens-morris.ai.computer-b.weights" path="/net/nine-mens-morris/ai/computer-b/weights/">
+    <key name="material" type="d">
+      <default>1.0</default>
+      <summary>Evaluation weight for material</summary>
+      <description>Evaluation weight for material (number of pieces left, relative to the pieces left of the opponent).</description>
+    </key>
+    <key name="freedom" type="d">
+      <default>0.2</default>
+      <summary>Evaluation weight for freedom</summary>
+      <description>Evaluation weight for freedom (number of possible moves, relative to the possible moves of the opponent).</description>
+    </key>
+    <key name="mills" type="d">
+      <default>0.8</default>
+      <summary>Evaluation weight for mills</summary>
+      <description>Evaluation weight for complete mills (number of completed mills, relative to the number of the opponent's mills).</description>
+    </key>
+    <key name="experience" type="d">
+      <default>1.0</default>
+      <summary>Evaluation weight for experience</summary>
+      <description>Evaluation weight for the experience gained during previous games. Positions that lead to winning a game get a bonus, while positions that lead to a lost game are down-rated.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -23,15 +23,15 @@
 #include "gtkcairo_boardgui.hh"
 
 
-void ConfigManager_AppGtk::store(const char* key, int   value)
+void ConfigManager_AppGtk::store(GSettings* settings, const char* key, int   value)
 {
   if (m_delegate != NULL)
     {
-      m_delegate->store(key, value);
+      m_delegate->store(settings, key, value);
     }
 }
 
-void ConfigManager_AppGtk::store(const char* key, bool  value)
+void ConfigManager_AppGtk::store(GSettings* settings, const char* key, bool  value)
 {
   if (cmp(key,itemPref_showLogOfMoves))
     {
@@ -65,11 +65,11 @@ void ConfigManager_AppGtk::store(const char* key, bool  value)
     }
   else if (m_delegate != NULL)
     {
-      m_delegate->store(key,value);
+      m_delegate->store(settings,key,value);
     }
 }
 
-void ConfigManager_AppGtk::store(const char* key, float value)
+void ConfigManager_AppGtk::store(GSettings* settings, const char* key, float value)
 {
   if (cmp(key,itemDisplayGtk_animationSpeed))
     {
@@ -81,27 +81,27 @@ void ConfigManager_AppGtk::store(const char* key, float value)
     }
   else if (m_delegate != NULL)
     {
-      m_delegate->store(key,value);
+      m_delegate->store(settings,key,value);
     }
 }
 
-void ConfigManager_AppGtk::store(const char* key, const char* value)
+void ConfigManager_AppGtk::store(GSettings* settings, const char* key, const char* value)
 {
   if (m_delegate != NULL)
     {
-      m_delegate->store(key,value);
+      m_delegate->store(settings,key,value);
     }
 }
 
-int ConfigManager_AppGtk::read_int(const char* key)
+int ConfigManager_AppGtk::read_int(GSettings* settings, const char* key)
 {
   if (m_delegate != NULL)
     {
-      return m_delegate->read_int(key);
+      return m_delegate->read_int(settings,key);
     }
 }
 
-bool ConfigManager_AppGtk::read_bool(const char* key)
+bool ConfigManager_AppGtk::read_bool(GSettings* settings, const char* key)
 {
   if (cmp(key,itemPref_showLogOfMoves))
     {
@@ -135,11 +135,11 @@ bool ConfigManager_AppGtk::read_bool(const char* key)
 
   if (m_delegate != NULL)
     {
-      return m_delegate->read_bool(key);
+      return m_delegate->read_bool(settings,key);
     }
 }
 
-float ConfigManager_AppGtk::read_float(const char* key)
+float ConfigManager_AppGtk::read_float(GSettings* settings, const char* key)
 {
   if (cmp(key,itemDisplayGtk_animationSpeed))
     {
@@ -152,14 +152,14 @@ float ConfigManager_AppGtk::read_float(const char* key)
 
   if (m_delegate != NULL)
     {
-      return m_delegate->read_float(key);
+      return m_delegate->read_float(settings,key);
     }
 }
 
-std::string ConfigManager_AppGtk::read_string(const char* key)
+std::string ConfigManager_AppGtk::read_string(GSettings* settings, const char* key)
 {
   if (m_delegate != NULL)
     {
-      return m_delegate->read_string(key);
+      return m_delegate->read_string(settings,key);
     }
 }

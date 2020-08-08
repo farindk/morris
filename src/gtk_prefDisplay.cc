@@ -53,17 +53,17 @@ bool preferencesDialog_Display()
   GtkWidget* check_showCoords  = gtk_check_button_new_with_label(_("show coordinates"));
 
   gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check_gameOverReq),
-			       config->read_bool(ConfigManager::itemDisplay_showGameOverMessageBox));
+			       config->read_bool(config->disp(), ConfigManager::itemDisplay_showGameOverMessageBox));
   gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check_animComp),
-			       config->read_bool(ConfigManager::itemDisplayGtk_animateComputerMoves));
+			       config->read_bool(config->disp(), ConfigManager::itemDisplayGtk_animateComputerMoves));
   gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check_animSet),
-			       config->read_bool(ConfigManager::itemDisplayGtk_animateSettingOfPieces));
+			       config->read_bool(config->disp(), ConfigManager::itemDisplayGtk_animateSettingOfPieces));
   gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check_animTake),
-			       config->read_bool(ConfigManager::itemDisplayGtk_animateTakes));
+			       config->read_bool(config->disp(), ConfigManager::itemDisplayGtk_animateTakes));
   gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check_showCoords),
-			       config->read_bool(ConfigManager::itemDisplayGtk_showCoordinates));
+			       config->read_bool(config->disp(), ConfigManager::itemDisplayGtk_showCoordinates));
   gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check_colCross),
-			       config->read_bool(ConfigManager::itemDisplayGtk_coloredCrossingsWhileDragging));
+			       config->read_bool(config->disp(), ConfigManager::itemDisplayGtk_coloredCrossingsWhileDragging));
 
   gtk_box_pack_start(GTK_BOX(vbox), check_gameOverReq, FALSE, TRUE, PADDING/2);
   gtk_box_pack_start(GTK_BOX(vbox), check_showCoords,  FALSE, TRUE, PADDING/2);
@@ -76,7 +76,7 @@ bool preferencesDialog_Display()
   GtkWidget* label = gtk_label_new(_("animation speed"));
 
 
-  float animSpeed = config->read_float(ConfigManager::itemDisplayGtk_animationSpeed);
+  float animSpeed = config->read_float(config->disp(), ConfigManager::itemDisplayGtk_animationSpeed);
   animSpeed = 100-animSpeed/20;
   GtkObject* adj_animSpeed = gtk_adjustment_new(animSpeed,
 						0.0,  // lower
@@ -95,7 +95,7 @@ bool preferencesDialog_Display()
   hbox  = gtk_hbox_new(FALSE,0);
   label = gtk_label_new(_("take piece delay"));
 
-  float takeDelay = config->read_float(ConfigManager::itemDisplayGtk_takePieceDelay);
+  float takeDelay = config->read_float(config->disp(), ConfigManager::itemDisplayGtk_takePieceDelay);
   takeDelay = takeDelay/10;
   GtkObject* adj_takeDelay = gtk_adjustment_new(takeDelay, // initial value
 						0.0,  // lower
@@ -124,22 +124,30 @@ bool preferencesDialog_Display()
     {
     case GTK_RESPONSE_ACCEPT:
       {
-	config->store(ConfigManager::itemDisplay_showGameOverMessageBox,
+	config->store(config->disp(),
+	              ConfigManager::itemDisplay_showGameOverMessageBox,
 		      bool(gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check_gameOverReq))));
-	config->store(ConfigManager::itemDisplayGtk_coloredCrossingsWhileDragging,
+	config->store(config->disp(),
+	              ConfigManager::itemDisplayGtk_coloredCrossingsWhileDragging,
 		      bool(gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check_colCross))));
-	config->store(ConfigManager::itemDisplayGtk_animateComputerMoves,
+	config->store(config->disp(),
+	              ConfigManager::itemDisplayGtk_animateComputerMoves,
 		      bool(gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check_animComp))));
-	config->store(ConfigManager::itemDisplayGtk_animateSettingOfPieces,
+	config->store(config->disp(),
+	              ConfigManager::itemDisplayGtk_animateSettingOfPieces,
 		      bool(gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check_animSet))));
-	config->store(ConfigManager::itemDisplayGtk_animateTakes,
+	config->store(config->disp(),
+	              ConfigManager::itemDisplayGtk_animateTakes,
 		      bool(gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check_animTake))));
-	config->store(ConfigManager::itemDisplayGtk_showCoordinates,
+	config->store(config->disp(),
+	              ConfigManager::itemDisplayGtk_showCoordinates,
 		      bool(gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check_showCoords))));
 
-	config->store(ConfigManager::itemDisplayGtk_animationSpeed,
+	config->store(config->disp(),
+	              ConfigManager::itemDisplayGtk_animationSpeed,
 		      float( 20*(100-gtk_range_get_value(GTK_RANGE(scale_animSpeed))) ));
-	config->store(ConfigManager::itemDisplayGtk_takePieceDelay,
+	config->store(config->disp(),
+	              ConfigManager::itemDisplayGtk_takePieceDelay,
 		      float( 10*     gtk_range_get_value(GTK_RANGE(scale_takeDelay)) ));
 
 	newValues = true;

@@ -31,12 +31,6 @@ morris_LDADD = $(GTK_LIBS)  $(GCONF_LIBS) $(BOOST_SIGNALS2_LIBS) $(LIBINTL)
 AM_CPPFLAGS = -DLOCALEDIR=\"$(localedir)\" \
 	$(GTK_CFLAGS)  $(GCONF_CFLAGS) $(BOOST_CPPFLAGS)
 
-if HAVE_GCONF
-  morris_LDADD += $(GCONF_LIBS)
-  AM_CPPFLAGS += $(GCONF_CFLAGS)
-  morris_SOURCES += gconf_configmgr.hh gconf_configmgr.cc
-endif
-
 #	-I$(top_srcdir) \
 #        -DGNOMELOCALEDIR=\""$(datadir)/locale"\" \
 #	-DGNOME_ICONDIR=\""$(datadir)/pixmaps"\"

@@ -79,14 +79,17 @@ static void preferencesDialog_Display()
 
 static void cb_pauseOnAI(GtkToggleAction* a)
 {
-  MainApp::app().getConfigManager()->store(ConfigManager::itemPref_pauseOnAIPlayer,
-					   bool(gtk_toggle_action_get_active(a)));
+  bool active = bool(gtk_toggle_action_get_active(a));
+  configmanager_ptr config = MainApp::app().getConfigManager();
+  config->store(config->main(), ConfigManager::itemPref_pauseOnAIPlayer, active);
 }
 
 static void cb_showMoveLog(GtkToggleAction* a)
 {
-  MainApp::app().getConfigManager()->store(ConfigManager::itemPref_showLogOfMoves,
-					   bool(gtk_toggle_action_get_active(a)));
+  bool active = bool(gtk_toggle_action_get_active(a));
+  configmanager_ptr config = MainApp::app().getConfigManager();
+  config->store(config->main(), ConfigManager::itemPref_showLogOfMoves, active);
+  MainApp::app().getApplicationGUI()->showMoveLog(active, false);
 }
 
 
@@ -277,6 +280,15 @@ void gtk_initMainMenu(GtkWidget* vbox, GtkWidget* window)
   gtk_box_pack_start(GTK_BOX(vbox), toolbar, false,true,0);
 
   // set defaults
+
+  configmanager_ptr config = MainApp::app().getConfigManager();
+
+  if (config->read_bool(config->main(),
+                        ConfigManager::itemPref_pauseOnAIPlayer))
+    gtk_action_activate(gtk_action_group_get_action(actiongroup, "pauseOnAI"));
+  if (config->read_bool(config->main(),
+                        ConfigManager::itemPref_showLogOfMoves))
+    gtk_action_activate(gtk_action_group_get_action(actiongroup, "moveLog"));
 
   gtk_action_set_sensitive( gtk_action_group_get_action(actiongroup, "ContinueGame"), false);
   gtk_action_set_sensitive( gtk_action_group_get_action(actiongroup, "ForceMove"), false);

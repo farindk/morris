@@ -20,29 +20,39 @@
 #include <string.h>
 
 
-const char* ConfigManager::itemComputer_maxTime[2] = { "ai/computerA/max_time","ai/computerB/max_time" };
-const char* ConfigManager::itemComputer_maxDepth[2] = { "ai/computerA/max_depth", "ai/computerB/max_depth" };
-const char* ConfigManager::itemComputer_weightMaterial[2] = { "ai/computerA/weights/material","ai/computerB/weights/material" };
-const char* ConfigManager::itemComputer_weightFreedom[2] = { "ai/computerA/weights/freedom","ai/computerB/weights/freedom" };
-const char* ConfigManager::itemComputer_weightMills[2] = { "ai/computerA/weights/mills","ai/computerB/weights/mills" };
-const char* ConfigManager::itemComputer_weightExperience[2] = { "ai/computerA/weights/experience","ai/computerB/weights/experience" };
+const char* ConfigManager::itemComputer_maxTime[2] = { "max-time","max-time" };
+const char* ConfigManager::itemComputer_maxDepth[2] = { "max-depth", "max-depth" };
+const char* ConfigManager::itemComputer_weightMaterial[2] = { "material","material" };
+const char* ConfigManager::itemComputer_weightFreedom[2] = { "freedom","freedom" };
+const char* ConfigManager::itemComputer_weightMills[2] = { "mills","mills" };
+const char* ConfigManager::itemComputer_weightExperience[2] = { "experience","experience" };
 
-const char* ConfigManager::itemComputers_shareTTables = "ai/share_transposition_tables";
-
-
-const char* ConfigManager::itemDisplay_showGameOverMessageBox = "display/show_game_over_message_box";
-const char* ConfigManager::itemDisplayGtk_showCoordinates = "display/show_board_coordinates";
-const char* ConfigManager::itemDisplayGtk_coloredCrossingsWhileDragging = "display/colored_crossings_while_dragging";
-const char* ConfigManager::itemDisplayGtk_animateComputerMoves = "display/animate_computer_moves";
-const char* ConfigManager::itemDisplayGtk_animateSettingOfPieces = "display/animate_setting_of_pieces";
-const char* ConfigManager::itemDisplayGtk_animateTakes   = "display/animate_takes";
-const char* ConfigManager::itemDisplayGtk_animationSpeed = "display/animation_speed";
-const char* ConfigManager::itemDisplayGtk_takePieceDelay = "display/take_piece_delay";
+const char* ConfigManager::itemComputers_shareTTables = "share-transposition-tables";
 
 
-const char* ConfigManager::itemPref_pauseOnAIPlayer = "pause_on_ai_player";
-const char* ConfigManager::itemPref_showLogOfMoves  = "show_log_of_moves";
+const char* ConfigManager::itemDisplay_showGameOverMessageBox = "show-game-over-message-box";
+const char* ConfigManager::itemDisplayGtk_showCoordinates = "show-board-coordinates";
+const char* ConfigManager::itemDisplayGtk_coloredCrossingsWhileDragging = "colored-crossings-while-dragging";
+const char* ConfigManager::itemDisplayGtk_animateComputerMoves = "animate-computer-moves";
+const char* ConfigManager::itemDisplayGtk_animateSettingOfPieces = "animate-setting-of-pieces";
+const char* ConfigManager::itemDisplayGtk_animateTakes   = "animate-takes";
+const char* ConfigManager::itemDisplayGtk_animationSpeed = "animation-speed";
+const char* ConfigManager::itemDisplayGtk_takePieceDelay = "take-piece-delay";
 
+
+const char* ConfigManager::itemPref_pauseOnAIPlayer = "pause-on-ai-player";
+const char* ConfigManager::itemPref_showLogOfMoves  = "show-log-of-moves";
+
+ConfigManager::ConfigManager()
+{
+  settings = g_settings_new("net.nine-mens-morris");
+  disp_settings = g_settings_get_child(settings, "display");
+  ai_settings = g_settings_get_child(settings, "ai");
+  compA_settings = g_settings_get_child(ai_settings, "computer-a");
+  compB_settings = g_settings_get_child(ai_settings, "computer-b");
+  weightsA_settings = g_settings_get_child(compA_settings, "weights");
+  weightsB_settings = g_settings_get_child(compB_settings, "weights");
+}
 
 bool ConfigManager::cmp(const char* a, const char* b)
 {

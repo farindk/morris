@@ -25,10 +25,6 @@
 #include "gtk_prefDisplay.hh"
 #include "appgtk_configmgr.hh"
 
-#if HAVE_GCONF
-#  include "gconf_configmgr.hh"
-#endif
-
 #include <assert.h>
 #include <iostream>
 #include <boost/bind.hpp>
@@ -97,16 +93,8 @@ void ApplicationGUI_Gtk::initApplicationGUI(int& argc, char**& argv)
 
   gtk_box_pack_end(GTK_BOX(appgui->getMainWindowVBox()), boardgui->getBoardWidget(), true,true,0);
 
-
-  // install configuration manager using GConf
-
-#if HAVE_GCONF
-  ConfigManager_GConf* config = new ConfigManager_GConf(0,NULL);
-  config->setAppConfigDelegate(configmanager_ptr(new ConfigManager_AppGtk));
-#else
-  ConfigManager_Chained* config = new ConfigManager_Application;
+  ConfigManager_Chained* config = new ConfigManager_Application();
   config->setDelegate(configmanager_ptr(new ConfigManager_AppGtk));
-#endif
 
   MainApp::app().registerConfigManager(configmanager_ptr(config));
 }
@@ -183,7 +171,8 @@ void ApplicationGUI_Gtk::showMoveLog(bool enable, bool quitApp)
 
   if (!quitApp)
     {
-      MainApp::app().getConfigManager()->store(ConfigManager::itemPref_showLogOfMoves, enable);
+      configmanager_ptr config = MainApp::app().getConfigManager();
+      config->store(config->main(), ConfigManager::itemPref_showLogOfMoves, enable);
     }
 }
 

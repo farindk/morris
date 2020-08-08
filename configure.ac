@@ -22,15 +22,7 @@ gthread-2.0
 gtk+-2.0 >= 2.4
 ])
 
-AC_ARG_WITH([gconf],
-  AS_HELP_STRING([--without-gconf], [Build without gconf library (default: test)]))
-
-if test "x$with_gconf" != "xno"; then
-  PKG_CHECK_MODULES(GCONF, [gconf-2.0])
-  AC_DEFINE(HAVE_GCONF, 1, "compile with gconf support")
-fi
-AM_GCONF_SOURCE_2
-AM_CONDITIONAL(HAVE_GCONF, test "x$with_gconf" != "xno")
+GLIB_GSETTINGS
 
 
 # gdk-pixbuf-2.0

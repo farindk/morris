@@ -70,6 +70,7 @@ void preferencesDialog_AI()
   configmanager_ptr config = MainApp::app().getConfigManager();
 
   GtkWidget* pref_dialog;
+  GSettings* obj;
 
   struct aiWidgets ai[2];
 
@@ -159,19 +160,29 @@ void preferencesDialog_AI()
 
       // set default values
 
+      if (c == 0)
+        obj = config->compA();
+      else
+        obj = config->compB();
+
       gtk_spin_button_set_value(GTK_SPIN_BUTTON(ai[c].spin_depth),
-				config->read_int(ConfigManager::itemComputer_maxDepth[c]));
+	                        config->read_int(obj,ConfigManager::itemComputer_maxDepth[c]));
       gtk_spin_button_set_value(GTK_SPIN_BUTTON(ai[c].spin_time),
-				config->read_int(ConfigManager::itemComputer_maxTime[c])/1000.0);
+	                        config->read_int(obj,ConfigManager::itemComputer_maxTime[c])/1000.0);
+
+      if (c == 0)
+        obj = config->weightsA();
+      else
+        obj = config->weightsB();
 
       gtk_range_set_value(GTK_RANGE(ai[c].scale_material),
-			  config->read_float(ConfigManager::itemComputer_weightMaterial[c]));
+	                  config->read_float(obj,ConfigManager::itemComputer_weightMaterial[c]));
       gtk_range_set_value(GTK_RANGE(ai[c].scale_freedom),
-			  config->read_float(ConfigManager::itemComputer_weightFreedom[c]));
+	                  config->read_float(obj,ConfigManager::itemComputer_weightFreedom[c]));
       gtk_range_set_value(GTK_RANGE(ai[c].scale_mills),
-			  config->read_float(ConfigManager::itemComputer_weightMills[c]));
+	                  config->read_float(obj,ConfigManager::itemComputer_weightMills[c]));
       gtk_range_set_value(GTK_RANGE(ai[c].scale_experience),
-			  config->read_float(ConfigManager::itemComputer_weightExperience[c]));
+	                  config->read_float(obj,ConfigManager::itemComputer_weightExperience[c]));
     }
 
   GtkWidget* big_hbox = gtk_hbox_new(FALSE,0);
@@ -183,7 +194,8 @@ void preferencesDialog_AI()
 
   GtkWidget* check_shareTT= gtk_check_button_new_with_label(_("share transposition table"));
 
-  bool share_TT = config->read_bool(ConfigManager::itemComputers_shareTTables);
+  bool share_TT = config->read_bool(config->ai(),
+                                    ConfigManager::itemComputers_shareTTables);
   gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check_shareTT), share_TT);
   gtk_box_pack_start(GTK_BOX(GTK_DIALOG(pref_dialog)->vbox), check_shareTT, FALSE, TRUE, PADDING);
   gtk_signal_connect(GTK_OBJECT(check_shareTT), "toggled", GTK_SIGNAL_FUNC(cb_aiPref_shareTT), &ai[1]);
@@ -198,15 +210,21 @@ void preferencesDialog_AI()
     case GTK_RESPONSE_ACCEPT:
       {
 	share_TT=gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(check_shareTT));
-	config->store(ConfigManager::itemComputers_shareTTables, share_TT);
+	config->store(config->ai(),
+	              ConfigManager::itemComputers_shareTTables, share_TT);
 
 	for (int c=0;c<2;c++)
 	  {
 	    MainApp::app().getTTable(c)->clear(); // TODO: in fact, we only have to clear the table, if we changed a crucial parameter
 
-	    config->store(ConfigManager::itemComputer_maxTime[c],
+	    if (c == 0)
+	      obj = config->compA();
+	    else
+	      obj = config->compB();
+
+	    config->store(obj,ConfigManager::itemComputer_maxTime[c],
 			  int( gtk_spin_button_get_value(GTK_SPIN_BUTTON(ai[c].spin_time)) * 1000.0 ));
-	    config->store(ConfigManager::itemComputer_maxDepth[c],
+	    config->store(obj,ConfigManager::itemComputer_maxDepth[c],
 			  int(gtk_spin_button_get_value(GTK_SPIN_BUTTON(ai[c].spin_depth))));
 
 
@@ -216,13 +234,18 @@ void preferencesDialog_AI()
 	    int c2 = c;
 	    if (share_TT) { c2=0; }
 
-	    config->store(ConfigManager::itemComputer_weightMaterial[c],
+	    if (c == 0)
+	      obj = config->weightsA();
+	    else
+	      obj = config->weightsB();
+
+	    config->store(obj,ConfigManager::itemComputer_weightMaterial[c],
 			  float(gtk_range_get_value(GTK_RANGE(ai[c2].scale_material))));
-	    config->store(ConfigManager::itemComputer_weightFreedom[c],
+	    config->store(obj,ConfigManager::itemComputer_weightFreedom[c],
 			  float(gtk_range_get_value(GTK_RANGE(ai[c2].scale_freedom))));
-	    config->store(ConfigManager::itemComputer_weightMills[c],
+	    config->store(obj,ConfigManager::itemComputer_weightMills[c],
 			  float(gtk_range_get_value(GTK_RANGE(ai[c2].scale_mills))));
-	    config->store(ConfigManager::itemComputer_weightExperience[c],
+	    config->store(obj,ConfigManager::itemComputer_weightExperience[c],
 			  float(gtk_range_get_value(GTK_RANGE(ai[c2].scale_experience))));
 	  }
       }

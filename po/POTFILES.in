@@ -10,4 +10,4 @@ src/gtk_prefRules.cc
 src/mainapp.cc
 src/util.hh
 morris.desktop.in
-morris.schemas.in
+net.nine-mens-morris.gschema.xml
