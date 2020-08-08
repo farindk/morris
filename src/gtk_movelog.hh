@@ -39,7 +39,7 @@ private:
   GtkListStore* liststore;
 
   gulong destroyHandler;
-  bs2::connection refreshConnection;
+  boost::signals2::connection refreshConnection;
 
   void   cbDestroy();
   friend gboolean cbMoveLog_gtk_destroy(GtkWidget *widget, gpointer data);

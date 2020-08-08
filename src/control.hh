@@ -26,8 +26,6 @@
 #include "board.hh"
 #include "player.hh"
 
-namespace bs2 = boost::signals2;
-
 
 struct GameState
 {
@@ -150,11 +148,11 @@ public:
 
   // --- signals ---
 
-  bs2::signal<void (Player)>&     getSignal_gameOver()    { return m_signal_gameOver; }
-  bs2::signal<void (GameState)>&  getSignal_changeState() { return m_signal_changeState; }
-  bs2::signal<void ()>&           getSignal_changeBoard() { return m_signal_changeBoard; }
-  bs2::signal<void (player_ptr)>& getSignal_startMove()   { return m_signal_startMove; }
-  bs2::signal<void (player_ptr)>& getSignal_endMove()     { return m_signal_endMove; }
+  boost::signals2::signal<void (Player)>&     getSignal_gameOver()    { return m_signal_gameOver; }
+  boost::signals2::signal<void (GameState)>&  getSignal_changeState() { return m_signal_changeState; }
+  boost::signals2::signal<void ()>&           getSignal_changeBoard() { return m_signal_changeBoard; }
+  boost::signals2::signal<void (player_ptr)>& getSignal_startMove()   { return m_signal_startMove; }
+  boost::signals2::signal<void (player_ptr)>& getSignal_endMove()     { return m_signal_endMove; }
 
 private:
   rulespec_ptr  m_ruleSpec;
@@ -182,12 +180,12 @@ private:
 
   // signals
 
-  bs2::signal<void (Player)>     m_signal_gameOver;
-  bs2::signal<void (GameState)>  m_signal_changeState;
-  bs2::signal<void ()>           m_signal_changeBoard;
+  boost::signals2::signal<void (Player)>     m_signal_gameOver;
+  boost::signals2::signal<void (GameState)>  m_signal_changeState;
+  boost::signals2::signal<void ()>           m_signal_changeBoard;
 
-  bs2::signal<void (player_ptr)> m_signal_startMove;
-  bs2::signal<void (player_ptr)> m_signal_endMove;
+  boost::signals2::signal<void (player_ptr)> m_signal_startMove;
+  boost::signals2::signal<void (player_ptr)> m_signal_endMove;
 };
 
 #endif
