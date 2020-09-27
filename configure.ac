@@ -1,6 +1,6 @@
 
 AC_PREREQ([2.63])
-AC_INIT([morris],[0.2],[dirk.farin@gmail.com])
+AC_INIT([morris],[0.3],[dirk.farin@gmail.com])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_SRCDIR([src/morris.cc])
 AC_CONFIG_HEADERS([config.h])
