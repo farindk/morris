@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morris 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-25 22:31+0100\n"
-"PO-Revision-Date: 2021-07-08 19:02+0800\n"
+"PO-Revision-Date: 2021-07-08 22:34+0800\n"
 "Last-Translator: Dirk Farin <dirk.farin@gmail.com>\n"
 "Language-Team: Chinese\n"
 "MIME-Version: 1.0\n"
@@ -28,25 +28,25 @@ msgstr "黑方"
 #: ../src/algo_alphabeta.cc:600
 #, c-format
 msgid "%s wins in %d moves)"
-msgstr "%s将在%d回合内胜出"
+msgstr "%s将在%d步内胜出"
 
 #: ../src/algo_alphabeta.cc:601
 #, c-format
 msgid "%s wins the next move)"
-msgstr "%s将在下一回合胜出"
+msgstr "%s将在下一步胜出"
 
 #: ../src/boardgui.cc:104
 #, c-format
 msgid "You make take %d opponent piece(s)."
-msgstr "你可以吃掉对方%d粒棋子。"
+msgstr "可以吃掉对方%d颗棋子。"
 
 #: ../src/gtk_appgui.cc:200
 msgid "White has won."
-msgstr "白方获胜。"
+msgstr "白方胜出。"
 
 #: ../src/gtk_appgui.cc:201
 msgid "Black has won."
-msgstr "黑方获胜。"
+msgstr "黑方胜出。"
 
 #: ../src/gtk_appgui.cc:202
 msgid "Tie between both players."
@@ -59,7 +59,7 @@ msgstr "游戏结束"
 #: ../src/gtk_appgui.cc:231
 msgid ""
 "A computer adaptation of the Nine-Mens-Morris board game and its variants."
-msgstr "九子直棋及其变体。"
+msgstr "九子直棋及其变体游戏。"
 
 #: ../src/gtk_menutoolbar.cc:173
 msgid "Game"
@@ -91,7 +91,7 @@ msgstr "立即走子"
 
 #: ../src/gtk_menutoolbar.cc:176
 msgid "Force computer move (immediately stop calculation)."
-msgstr "强令电脑中断运算， 立即走子。"
+msgstr "强令电脑中断运算，立即行棋。"
 
 #: ../src/gtk_menutoolbar.cc:177
 msgid "Undo move"
@@ -99,7 +99,7 @@ msgstr "悔棋"
 
 #: ../src/gtk_menutoolbar.cc:177
 msgid "Undo last move."
-msgstr "悔棋。"
+msgstr "悔上一步棋。"
 
 #: ../src/gtk_menutoolbar.cc:178
 msgid "Redo move"
@@ -107,7 +107,7 @@ msgstr "取消悔棋"
 
 #: ../src/gtk_menutoolbar.cc:178
 msgid "Redo last move."
-msgstr "取消悔棋。"
+msgstr "继续选择上一步棋。"
 
 #: ../src/gtk_menutoolbar.cc:179
 msgid "Hint"
@@ -115,7 +115,7 @@ msgstr "提示"
 
 #: ../src/gtk_menutoolbar.cc:179
 msgid "Give a hint for the next move."
-msgstr "提示下一步。"
+msgstr "提示下一步棋。"
 
 #: ../src/gtk_menutoolbar.cc:182
 msgid "Options"
@@ -123,11 +123,11 @@ msgstr "选项"
 
 #: ../src/gtk_menutoolbar.cc:183 ../src/mainapp.cc:348
 msgid "White player"
-msgstr "白方"
+msgstr "白方玩家"
 
 #: ../src/gtk_menutoolbar.cc:184 ../src/mainapp.cc:350
 msgid "Black player"
-msgstr "黑方"
+msgstr "黑方玩家"
 
 #: ../src/gtk_menutoolbar.cc:185
 msgid "Swap players"
@@ -143,7 +143,7 @@ msgstr "设置棋盘外观..."
 
 #: ../src/gtk_menutoolbar.cc:188
 msgid "Configure custom rules ..."
-msgstr "设置规则..."
+msgstr "规则设置..."
 
 #: ../src/gtk_menutoolbar.cc:189
 msgid "Help"
@@ -151,7 +151,7 @@ msgstr "帮助"
 
 #: ../src/gtk_menutoolbar.cc:190
 msgid "About Morris..."
-msgstr "关于直棋..."
+msgstr "关于德克的直棋..."
 
 #: ../src/gtk_menutoolbar.cc:191
 msgid "Preferences"
@@ -177,63 +177,63 @@ msgstr "联网对弈"
 
 #: ../src/gtk_menutoolbar.cc:212
 msgid "Standard rules"
-msgstr "标准九子棋盘"
+msgstr "标准规则"
 
 #: ../src/gtk_menutoolbar.cc:213 ../src/gtk_prefRules.cc:113
 msgid "Lasker variant"
-msgstr "十子变体棋盘"
+msgstr "拉斯科变体"
 
 #: ../src/gtk_menutoolbar.cc:214 ../src/gtk_prefRules.cc:60
 msgid "Moebius board"
-msgstr "莫比乌斯棋盘"
+msgstr "莫比乌斯"
 
 #: ../src/gtk_menutoolbar.cc:215 ../src/gtk_prefRules.cc:61
 msgid "Morabaraba"
-msgstr "十二子棋盘"
+msgstr "十二子直棋"
 
 #: ../src/gtk_menutoolbar.cc:216 ../src/gtk_prefRules.cc:62
 msgid "Windmill"
-msgstr "风车棋盘"
+msgstr "风车"
 
 #: ../src/gtk_menutoolbar.cc:217 ../src/gtk_prefRules.cc:63
 msgid "Sunmill"
-msgstr "磨坊棋盘"
+msgstr "磨坊"
 
 #: ../src/gtk_menutoolbar.cc:218 ../src/gtk_prefRules.cc:68
 msgid "Six Men's Morris"
-msgstr "六子棋盘"
+msgstr "六子直棋"
 
 #: ../src/gtk_menutoolbar.cc:219 ../src/gtk_prefRules.cc:67
 msgid "Seven Men's Morris"
-msgstr "七子棋盘"
+msgstr "七子直棋"
 
 #: ../src/gtk_menutoolbar.cc:220
 msgid "Triangle board"
-msgstr "三角形棋盘"
+msgstr "三角形直棋"
 
 #: ../src/gtk_menutoolbar.cc:221
 msgid "Pentagon board"
-msgstr "五边形棋盘"
+msgstr "五边形直棋"
 
 #: ../src/gtk_menutoolbar.cc:222
 msgid "Hexagon board"
-msgstr "六边形棋盘"
+msgstr "六边形直棋"
 
 #: ../src/gtk_menutoolbar.cc:223
 msgid "Tapatan"
-msgstr "米字三子棋盘"
+msgstr "米字三子直棋"
 
 #: ../src/gtk_menutoolbar.cc:224
 msgid "Achi"
-msgstr "米字四子棋盘"
+msgstr "米字四子直棋"
 
 #: ../src/gtk_menutoolbar.cc:225 ../src/gtk_prefRules.cc:71
 msgid "Small triangle"
-msgstr "小三角形棋盘"
+msgstr "小三角形直棋"
 
 #: ../src/gtk_menutoolbar.cc:226
 msgid "Nine Holes"
-msgstr "田字格棋盘"
+msgstr "田字格直棋"
 
 #: ../src/gtk_menutoolbar.cc:227
 msgid "Custom rules"
@@ -245,7 +245,7 @@ msgstr "电脑每步一停"
 
 #: ../src/gtk_menutoolbar.cc:232
 msgid "Pause before each AI move."
-msgstr "电脑每下次动前暂停。"
+msgstr "电脑每次行动前暂停。"
 
 #. default
 #: ../src/gtk_menutoolbar.cc:234
@@ -254,7 +254,7 @@ msgstr "显示本局棋谱"
 
 #: ../src/gtk_movelog.cc:47
 msgid "Move List"
-msgstr "显示本局棋谱"
+msgstr "本局棋谱"
 
 #: ../src/gtk_movelog.cc:63
 msgid "Move"
@@ -278,7 +278,7 @@ msgstr "人工智能设置"
 
 #: ../src/gtk_prefAI.cc:119
 msgid "<b>thinking process</b>"
-msgstr "<b>思考进程</b>"
+msgstr "<b>思考限制</b>"
 
 #: ../src/gtk_prefAI.cc:122
 msgid "max. time"
@@ -318,11 +318,11 @@ msgstr "棋盘外观"
 
 #: ../src/gtk_prefDisplay.cc:48
 msgid "animate computer moves"
-msgstr "电脑下子动画效果"
+msgstr "电脑行棋动画效果"
 
 #: ../src/gtk_prefDisplay.cc:49
 msgid "animate setting of pieces"
-msgstr "下子动画效果"
+msgstr "落子动画效果"
 
 #: ../src/gtk_prefDisplay.cc:50
 msgid "animate takes"
@@ -330,11 +330,11 @@ msgstr "吃子动画效果"
 
 #: ../src/gtk_prefDisplay.cc:51
 msgid "colored crossings while dragging"
-msgstr "走子时棋盘节点着色"
+msgstr "行棋时，棋盘交叉点着色"
 
 #: ../src/gtk_prefDisplay.cc:52
 msgid "show game-over message box"
-msgstr "显示游戏结束提示"
+msgstr "显示游戏结束消息框"
 
 #: ../src/gtk_prefDisplay.cc:53
 msgid "show coordinates"
@@ -390,11 +390,11 @@ msgstr "规则变体"
 
 #: ../src/gtk_prefRules.cc:114
 msgid "May jump with three pieces"
-msgstr "棋盘上仅剩三子时，可任意安置棋子"
+msgstr "一方棋盘上仅剩三子时，可任意安置棋子"
 
 #: ../src/gtk_prefRules.cc:115
 msgid "May take from mills always"
-msgstr "可以吃掉对方成三的棋子"
+msgstr "可吃掉对方已成三的棋子"
 
 #: ../src/gtk_prefRules.cc:116
 msgid "May take multiple pieces"
@@ -406,15 +406,15 @@ msgstr "每方棋子数"
 
 #: ../src/gtk_prefRules.cc:145
 msgid "Declare tie after how many repeats"
-msgstr "几次重复回合后和棋"
+msgstr "多少次重复回合后和棋"
 
 #: ../src/gtk_prefRules.cc:221
 msgid "Your changes require to end the currently running game."
-msgstr "正在进行的游戏必须终止。"
+msgstr "要修改设置，必须终止当前的棋局。"
 
 #: ../src/gtk_prefRules.cc:222
 msgid "Do you want to restart with the changed rules?"
-msgstr "在设定好的规则下重开游戏吗？"
+msgstr "在设定好的规则下重开游戏？"
 
 #: ../src/mainapp.cc:324
 msgid "Game over: white has won!"
@@ -430,15 +430,15 @@ msgstr "游戏结束：和棋。"
 
 #: ../src/mainapp.cc:338
 msgid "Game paused. Click continue to proceed."
-msgstr "游戏已暂停。点击继续选项接着游戏。"
+msgstr "游戏已暂停。点击继续菜单项进行游戏。"
 
 #: ../src/mainapp.cc:356
 msgid "set or move a piece."
-msgstr "下子或移动。"
+msgstr "落子或移动。"
 
 #: ../src/mainapp.cc:357
 msgid "set a piece."
-msgstr "下一子。"
+msgstr "落子。"
 
 #: ../src/mainapp.cc:358
 msgid "move a piece."
@@ -446,7 +446,7 @@ msgstr "移动一子。"
 
 #: ../src/mainapp.cc:362
 msgid "computer is taking his turn...   "
-msgstr "电脑思考中......"
+msgstr "电脑思考中..."
 
 #: ../morris.desktop.in.h:1
 msgid "Morris"
@@ -458,7 +458,7 @@ msgstr "九子直棋"
 
 #: ../morris.schemas.in.h:1
 msgid "Animate setting new pieces"
-msgstr "下子动画效果"
+msgstr "落子动画效果"
 
 #: ../morris.schemas.in.h:2
 msgid "Animate takes"
@@ -466,7 +466,7 @@ msgstr "吃子动画效果"
 
 #: ../morris.schemas.in.h:3
 msgid "Animate the computer moves"
-msgstr "电脑下子动画效果"
+msgstr "电脑下棋动画效果"
 
 #: ../morris.schemas.in.h:4
 msgid "Animation speed"
@@ -525,7 +525,7 @@ msgid ""
 "Evaluation weight for the experience gained during previous games. Positions "
 "that lead to winning a game get a bonus, while positions that lead to a lost "
 "game are down-rated."
-msgstr "先前游戏中获得的经验的权重评估。获胜有奖励，失败被降级。"
+msgstr "先前游戏中获得的经验的权重评估。获胜有奖励，失败则降级。"
 
 #: ../morris.schemas.in.h:16
 msgid "If enabled, setting new pieces by the computer will be animated."
@@ -533,17 +533,17 @@ msgstr "启用后，将设置新棋子动画。"
 
 #: ../morris.schemas.in.h:17
 msgid "If enabled, taking of opponent stones by the computer will be animated."
-msgstr "启用后，计算机提子动画化。"
+msgstr "启用后，计算机吃子动画化。"
 
 #: ../morris.schemas.in.h:18
 msgid "If enabled, the program will pause before an AI-player makes a move."
-msgstr "启用后，AI和玩家对局时每回合暂停。"
+msgstr "启用后，人工智能和玩家对局时，每回合暂停。"
 
 #: ../morris.schemas.in.h:19
 msgid ""
 "If this is enabled, the crossings of the board are colored while the user "
 "drags a piece to show the valid moves."
-msgstr "启用此选项，用户拖动棋子时，会对显示有效移动点着色。"
+msgstr "启用此选项，用户拖动棋子时，会对有效移动点着色。"
 
 #: ../morris.schemas.in.h:20
 msgid "Maximum search-depth"
@@ -559,7 +559,7 @@ msgstr "思考深度上限"
 
 #: ../morris.schemas.in.h:23
 msgid "Maximum time (in milliseconds) Computer A is allowed to think."
-msgstr "电脑甲思考的时间上限（以毫秒为单位）。"
+msgstr "电脑甲思考的时间上限（单位为毫秒）。"
 
 #: ../morris.schemas.in.h:24
 msgid "Pause on AI players"
@@ -567,7 +567,7 @@ msgstr "电脑暂停"
 
 #: ../morris.schemas.in.h:25
 msgid "Share transposition tables between Computer A and B"
-msgstr "两个电脑共享置换表"
+msgstr "两个电脑玩家共享置换表"
 
 #: ../morris.schemas.in.h:26
 msgid "Show a game log"
@@ -606,9 +606,9 @@ msgid ""
 "other. Note that if this is enabled, the evaluation weights of both players "
 "have to be set to identical values."
 msgstr ""
-"两个人工智能（电脑甲和电脑乙）是否应该使用相同的换位表。 如果启用，一个人工智"
-"能将从另一个人工智能的计算中受益。注意，如果启用此功能，则必须将两个玩家的评"
-"估权重设置为相同的值。"
+"两个人工智能（电脑甲和电脑乙）是否应该使用相同的置换表。启用后，一个人工智能"
+"可从另一个人工智能中受益。注意，如启用此功能，则必须让两个电脑玩家的评估权重"
+"数值相同。"
 
 #: ../morris.schemas.in.h:34
 msgid "Whether the computer moves should be shown as small animations."
