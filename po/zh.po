@@ -99,7 +99,7 @@ msgstr "悔棋"
 
 #: ../src/gtk_menutoolbar.cc:177
 msgid "Undo last move."
-msgstr "悔上一步棋。"
+msgstr "悔一步棋。"
 
 #: ../src/gtk_menutoolbar.cc:178
 msgid "Redo move"
@@ -107,7 +107,7 @@ msgstr "取消悔棋"
 
 #: ../src/gtk_menutoolbar.cc:178
 msgid "Redo last move."
-msgstr "继续选择上一步棋。"
+msgstr "取消悔棋。"
 
 #: ../src/gtk_menutoolbar.cc:179
 msgid "Hint"
@@ -135,7 +135,7 @@ msgstr "换棋"
 
 #: ../src/gtk_menutoolbar.cc:186
 msgid "Configure AI ..."
-msgstr "设置人工智能参数..."
+msgstr "设置 AI 参数..."
 
 #: ../src/gtk_menutoolbar.cc:187
 msgid "Configure display ..."
@@ -274,11 +274,11 @@ msgstr "和棋"
 
 #: ../src/gtk_prefAI.cc:76
 msgid "AI Preferences"
-msgstr "人工智能设置"
+msgstr "AI 设置"
 
 #: ../src/gtk_prefAI.cc:119
 msgid "<b>thinking process</b>"
-msgstr "<b>思考限制</b>"
+msgstr "<b>思考进程</b>"
 
 #: ../src/gtk_prefAI.cc:122
 msgid "max. time"
@@ -390,7 +390,7 @@ msgstr "规则变体"
 
 #: ../src/gtk_prefRules.cc:114
 msgid "May jump with three pieces"
-msgstr "一方棋盘上仅剩三子时，可任意安置棋子"
+msgstr "仅剩三子的一方，棋子行动时可到任意空位"
 
 #: ../src/gtk_prefRules.cc:115
 msgid "May take from mills always"
@@ -398,7 +398,7 @@ msgstr "可吃掉对方已成三的棋子"
 
 #: ../src/gtk_prefRules.cc:116
 msgid "May take multiple pieces"
-msgstr "一次可吃掉多个棋子"
+msgstr "一次可吃掉多颗棋子"
 
 #: ../src/gtk_prefRules.cc:125
 msgid "Number of pieces"
@@ -414,7 +414,7 @@ msgstr "要修改设置，必须终止当前的棋局。"
 
 #: ../src/gtk_prefRules.cc:222
 msgid "Do you want to restart with the changed rules?"
-msgstr "在设定好的规则下重开游戏？"
+msgstr "在设置好的规则下重开游戏？"
 
 #: ../src/mainapp.cc:324
 msgid "Game over: white has won!"
@@ -430,7 +430,7 @@ msgstr "游戏结束：和棋。"
 
 #: ../src/mainapp.cc:338
 msgid "Game paused. Click continue to proceed."
-msgstr "游戏已暂停。点击继续菜单项进行游戏。"
+msgstr "游戏已暂停。点击“继续”菜单项进行游戏。"
 
 #: ../src/mainapp.cc:356
 msgid "set or move a piece."
@@ -490,7 +490,7 @@ msgstr "移子阶段和吃子阶段切换有延迟（单位为毫秒）。"
 msgid ""
 "Evaluation weight for complete mills (number of completed mills, relative to "
 "the number of the opponent's mills)."
-msgstr "完整成三的权重评估（完整成三的数量，相对于对手成三的数量）。"
+msgstr "完整成三的权重评估（相比对手，己方完成的成三数）。"
 
 #: ../morris.schemas.in.h:9
 msgid "Evaluation weight for experience"
@@ -504,7 +504,7 @@ msgstr "自由度权重评估"
 msgid ""
 "Evaluation weight for freedom (number of possible moves, relative to the "
 "possible moves of the opponent)."
-msgstr "自由度的权重评估（相对于对手可能的移动，已方可移动次数）。"
+msgstr "自由度的权重评估（相比对方可能的移动，己方可移动次数）。"
 
 #: ../morris.schemas.in.h:12
 msgid "Evaluation weight for material"
@@ -514,7 +514,7 @@ msgstr "棋子数权重评估"
 msgid ""
 "Evaluation weight for material (number of pieces left, relative to the "
 "pieces left of the opponent)."
-msgstr "棋子数权重评估（相对于对手剩余棋子，剩余棋子数）。"
+msgstr "棋子数权重评估（相比对方剩余棋子，己方剩余棋子数）。"
 
 #: ../morris.schemas.in.h:14
 msgid "Evaluation weight for mills"
@@ -537,7 +537,7 @@ msgstr "启用后，计算机吃子动画化。"
 
 #: ../morris.schemas.in.h:18
 msgid "If enabled, the program will pause before an AI-player makes a move."
-msgstr "启用后，人工智能和玩家对局时，每回合暂停。"
+msgstr "启用后，电脑和玩家对战时，每回合暂停。"
 
 #: ../morris.schemas.in.h:19
 msgid ""
@@ -606,10 +606,10 @@ msgid ""
 "other. Note that if this is enabled, the evaluation weights of both players "
 "have to be set to identical values."
 msgstr ""
-"两个人工智能（电脑甲和电脑乙）是否应该使用相同的置换表。启用后，一个人工智能"
-"可从另一个人工智能中受益。注意，如启用此功能，则必须让两个电脑玩家的评估权重"
+"两个电脑玩家是否使用相同的置换表。启用后，某个 AI"
+"可从另一个 AI 的计算中受益。注意，如启用此功能，则必须让两个电脑玩家的评估权重"
 "数值相同。"
 
 #: ../morris.schemas.in.h:34
 msgid "Whether the computer moves should be shown as small animations."
-msgstr "无论计算机移动与否，总显示动画。"
+msgstr "无论电脑玩家行棋与否，总会显示动画。"
