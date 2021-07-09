@@ -83,7 +83,7 @@ msgstr "继续对局"
 
 #: ../src/gtk_menutoolbar.cc:175
 msgid "Continue a paused game."
-msgstr "取消暂停继续对战。"
+msgstr "取消暂停，继续对战。"
 
 #: ../src/gtk_menutoolbar.cc:176
 msgid "Force move"
