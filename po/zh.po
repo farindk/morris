@@ -185,7 +185,7 @@ msgstr "拉斯科变体"
 
 #: ../src/gtk_menutoolbar.cc:214 ../src/gtk_prefRules.cc:60
 msgid "Moebius board"
-msgstr "莫比乌斯"
+msgstr "莫比乌斯棋盘"
 
 #: ../src/gtk_menutoolbar.cc:215 ../src/gtk_prefRules.cc:61
 msgid "Morabaraba"
@@ -193,11 +193,11 @@ msgstr "十二子直棋"
 
 #: ../src/gtk_menutoolbar.cc:216 ../src/gtk_prefRules.cc:62
 msgid "Windmill"
-msgstr "风车"
+msgstr "风车棋盘"
 
 #: ../src/gtk_menutoolbar.cc:217 ../src/gtk_prefRules.cc:63
 msgid "Sunmill"
-msgstr "磨坊"
+msgstr "磨坊棋盘"
 
 #: ../src/gtk_menutoolbar.cc:218 ../src/gtk_prefRules.cc:68
 msgid "Six Men's Morris"
@@ -314,7 +314,7 @@ msgstr "共享置换表"
 
 #: ../src/gtk_prefDisplay.cc:36
 msgid "Display Preferences"
-msgstr "棋盘外观"
+msgstr "棋盘外观设置"
 
 #: ../src/gtk_prefDisplay.cc:48
 msgid "animate computer moves"
