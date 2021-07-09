@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: morris 0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-25 22:31+0100\n"
-"PO-Revision-Date: 2021-07-09 11:25+0800\n"
+"PO-Revision-Date: 2021-07-09 13:03+0800\n"
 "Last-Translator: Liu Litchi <xingzuo88@qq.com>\n"
 "Language-Team: Chinese\n"
 "MIME-Version: 1.0\n"
@@ -59,7 +59,7 @@ msgstr "终局"
 #: ../src/gtk_appgui.cc:231
 msgid ""
 "A computer adaptation of the Nine-Mens-Morris board game and its variants."
-msgstr "九子直棋（成三棋），及其变体。"
+msgstr "九子直棋，及其变体。"
 
 #: ../src/gtk_menutoolbar.cc:173
 msgid "Game"
@@ -209,31 +209,31 @@ msgstr "七子直棋"
 
 #: ../src/gtk_menutoolbar.cc:220
 msgid "Triangle board"
-msgstr "三角形直棋"
+msgstr "三角形棋盘"
 
 #: ../src/gtk_menutoolbar.cc:221
 msgid "Pentagon board"
-msgstr "五边形直棋"
+msgstr "五边形棋盘"
 
 #: ../src/gtk_menutoolbar.cc:222
 msgid "Hexagon board"
-msgstr "六边形直棋"
+msgstr "六边形棋盘"
 
 #: ../src/gtk_menutoolbar.cc:223
 msgid "Tapatan"
-msgstr "米字三子直棋"
+msgstr "三子米字棋盘"
 
 #: ../src/gtk_menutoolbar.cc:224
 msgid "Achi"
-msgstr "米字四子直棋"
+msgstr "四子米字棋盘"
 
 #: ../src/gtk_menutoolbar.cc:225 ../src/gtk_prefRules.cc:71
 msgid "Small triangle"
-msgstr "小三角形直棋"
+msgstr "小三角形棋盘"
 
 #: ../src/gtk_menutoolbar.cc:226
 msgid "Nine Holes"
-msgstr "田字格直棋"
+msgstr "田字格棋盘"
 
 #: ../src/gtk_menutoolbar.cc:227
 msgid "Custom rules"
@@ -354,23 +354,23 @@ msgstr "九子直棋"
 
 #: ../src/gtk_prefRules.cc:64
 msgid "Triangle"
-msgstr "三角形直棋"
+msgstr "三角形棋盘"
 
 #: ../src/gtk_prefRules.cc:65
 msgid "Pentagon"
-msgstr "五边形直棋"
+msgstr "五边形棋盘"
 
 #: ../src/gtk_prefRules.cc:66
 msgid "Hexagon"
-msgstr "六边形直棋"
+msgstr "六边形棋盘"
 
 #: ../src/gtk_prefRules.cc:69
 msgid "Small square"
-msgstr "田字格直棋"
+msgstr "田字格棋盘"
 
 #: ../src/gtk_prefRules.cc:70
 msgid "Small square with diagonals"
-msgstr "米字格直棋"
+msgstr "米字格棋盘"
 
 #: ../src/gtk_prefRules.cc:80
 msgid "Rule Preferences"
